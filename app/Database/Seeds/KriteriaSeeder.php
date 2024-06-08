@@ -8,16 +8,38 @@ class KriteriaSeeder extends Seeder
 {
     public function run()
     {
-        $faker = \Faker\Factory::create();
-        $data = [];
-        for ($i = 1; $i <= 5; $i++) {
-            $data[] = [
-                'kode_kriteria' => $faker->numberBetween(0, 100),
-                'nama_kriteria' => $faker->cityPrefix,
-                'bobot' => $faker->randomFloat(null, 1, 9),
-                'jenis' => $faker->randomElement(['Benefit', 'Cost']),
-            ];
-        }
+        $data = [
+            [
+                'kode_kriteria' => 'K1',
+                'nama_kriteria' => 'Sikap dan Etika Kerja',
+                'bobot' => '0.25',
+                'jenis' => 'Benefit',
+            ],
+            [
+                'kode_kriteria' => 'K2',
+                'nama_kriteria' => 'Absensi',
+                'bobot' => '0.15',
+                'jenis' => 'Cost',
+            ],
+            [
+                'kode_kriteria' => 'K3',
+                'nama_kriteria' => 'Target Pekerjaan',
+                'bobot' => '0.30',
+                'jenis' => 'Benefit',
+            ],
+            [
+                'kode_kriteria' => 'K4',
+                'nama_kriteria' => 'Inisiatif Pekerjaan',
+                'bobot' => '0.20',
+                'jenis' => 'Benefit',
+            ],
+            [
+                'kode_kriteria' => 'K5',
+                'nama_kriteria' => 'Lama Kerja',
+                'bobot' => '0.1',
+                'jenis' => 'Benefit',
+            ]
+        ];
 
         $db = \Config\Database::connect();
 

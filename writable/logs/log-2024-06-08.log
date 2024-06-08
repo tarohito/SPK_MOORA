@@ -1262,3 +1262,35 @@ in APPPATH\Controllers\SubKriteria.php on line 49.
  3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
+INFO - 2024-06-08 05:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 05:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 05:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 05:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 05:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 05:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 05:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 05:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 05:42:43 --> ErrorException: Undefined variable $uri
+in APPPATH\Views\layout\template.php on line 73.
+ 1 APPPATH\Views\layout\template.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\laragon\\www\\spkmoora\\app\\Views\\layout\\template.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 6 APPPATH\Controllers\Profile.php(14): view('profil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Profile->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
+INFO - 2024-06-08 05:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 14:36:46 --> ParseError: syntax error, unexpected identifier "sebagai"
+in APPPATH\Views\sub_kriteria.php on line 13.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sub_kriteria', [], true)
+ 3 APPPATH\Controllers\SubKriteria.php(23): view('sub_kriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\SubKriteria->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubKriteria))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
