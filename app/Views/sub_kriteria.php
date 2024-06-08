@@ -10,37 +10,141 @@
             </div>
         </div>
     </div>
-    <?php foreach ($kriteria as $row) : ?>
-        <div class="row column1">
-            <div class="col-md-12">
-                <div class="white_shd full margin_bottom_30">
-                    <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
-                        <div class="heading1 margin_0">
-                            <h2 class="text-white"><?= $row['nama_kriteria']; ?></h2>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn-success" style="margin-right: 10px;" data-toggle="modal" data-target="#modalTambah"><i class="fa fa-plus"></i>&nbsp;Tambah Data</button>
-                        </div>
+    <div class="row column1">
+        <div class="col-md-12">
+            <div class="white_shd full margin_bottom_30">
+                <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
+                    <div class="heading1 margin_0">
+                        <h2 class="text-white">List Kriteria Penilaian</h2>
                     </div>
-                    <div class="table_section padding_infor_info">
-                        <div class="table-responsive-sm">
-                            <table id="myTable" class="table">
-                                <thead>
+                    <div>
+                        <button type="button" class="btn btn-success" style="margin-right: 10px;" data-toggle="modal" data-target="#modalTambah"><i class="fa fa-plus"></i>&nbsp;Tambah Data</button>
+                    </div>
+                </div>
+                <div class="table_section padding_infor_info">
+                    <div class="table-responsive-sm">
+                        <table id="myTable" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Kriteria</th>
+                                    <th>Keterangan</th>
+                                    <th>Nilai</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($sub_kriteria as $a) : ?>
                                     <tr>
-                                        <th>Kode Kriteria</th>
-                                        <th>Nama Kriteria</th>
-                                        <th>Bobot</th>
-                                        <th>Jenis</th>
-                                        <th>Aksi</th>
+                                        <td><?= $a['nama_kriteria'] ?></td>
+                                        <td><?= $a['keterangan'] ?></td>
+                                        <td><?= $a['nilai'] ?></td>
+                                        <td>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editModal<?= $a['id'] ?>">Edit</button>
+                                                <button href="#" data-href="<?= base_url('sub_kriteria/' . $a['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
+                                            </div>
+                                        </td>
                                     </tr>
-                                </thead>
-                            </table>
-                        </div>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-    <?php endforeach; ?>
+    </div>
+</div>
+
+<!-- create -->
+<div class="modal fade" id="modalTambah" tabindex="-1" role="dialog" aria-labelledby="modalTambahTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header dash_head">
+                <h4 class="modal-title text-white font-weight-normal" id="modalTambahTitle">Tambah Sub Kriteria</h4>
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-padding">
+                <!-- Form tambah data disini -->
+                <form action="<?= base_url('sub_kriteria/store') ?>" method="post">
+                    <div class="form-group">
+                        <label for="kriteria_id">Kriteria</label>
+                        <select class="form-control" name="kriteria_id" id="kriteria_id">
+                            <?php foreach ($kriteria as $k) : ?>
+                                <option value="<?= $k['id'] ?>"><?= $k['nama_kriteria'] ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nama_kriteria">Keterangan</label>
+                        <input type="text" class="form-control" id="keterangan" name="keterangan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bobot">Nilai</label>
+                        <input type="number" class="form-control" id="nilai" name="nilai" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- edit -->
+<?php foreach ($sub_kriteria as $row) : ?>
+    <div class="modal fade" id="editModal<?= $row['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="editModalTitle<?= $row['id'] ?>" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role=" document">
+            <div class="modal-content">
+                <div class="modal-header dash_head">
+                    <h4 class="modal-title text-white font-weight-normal" id="editModalTitle<?= $row['id'] ?>">Edit Sub Kriteria</h4>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-padding">
+                    <!-- Form edit data disini -->
+                    <form action="<?= base_url('sub_kriteria/update') ?>" method="post">
+                        <input type="hidden" name="id" value="<?= $row['id'] ?>">
+                        <div class="form-group">
+                            <label for="kriteria_id">Kriteria</label>
+                            <select class="form-control" name="kriteria_id" id="kriteria_id">
+                                <?php foreach ($kriteria as $k) : ?>
+                                    <option value="<?= $k['id'] ?>" <?= ($k['id'] == $row['kriteria_id']) ? 'selected' : '' ?>><?= $k['nama_kriteria'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="keterangan">Keterangan</label>
+                            <input type="text" class="form-control" id="keterangan" name="keterangan" required value="<?= $row['keterangan'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="nilai">Nilai</label>
+                            <input type="number" class="form-control" id="nilai" name="nilai" required value="<?= $row['nilai'] ?>">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endforeach; ?>
+
+<!-- delete -->
+<div id="confirm-dialog" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center"> <!-- Tambahkan class text-center -->
+                <h4 class="h2">Apa Anda Yakin ??</h4>
+                <p>Data tersebut akan terhapus dan hilang selamanya</p>
+            </div>
+            <div class="modal-footer justify-content-center"> <!-- Tambahkan class justify-content-center -->
+                <a href="#" role="button" id="delete-button" class="btn btn-danger">Hapus</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- footer -->
