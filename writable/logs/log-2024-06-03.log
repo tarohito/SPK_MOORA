@@ -1,0 +1,645 @@
+INFO - 2024-06-03 14:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 14:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 14:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 14:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 14:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 15:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 15:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 15:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 15:18:54 --> ErrorException: Undefined variable $karyawan
+in APPPATH\Views\kriteria_penilaian.php on line 36.
+ 1 APPPATH\Views\kriteria_penilaian.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $karyawan', 'C:\\laragon\\www\\SPK\\app\\Views\\kriteria_penilaian.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK\\app\\Views\\kriteria_penilaian.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kriteria_penilaian', [], true)
+ 5 APPPATH\Controllers\KriteriaPenilaian.php(9): view('kriteria_penilaian')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 15:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 15:25:44 --> ErrorException: Undefined variable $karyawan
+in APPPATH\Views\kriteria_penilaian.php on line 36.
+ 1 APPPATH\Views\kriteria_penilaian.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $karyawan', 'C:\\laragon\\www\\SPK\\app\\Views\\kriteria_penilaian.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK\\app\\Views\\kriteria_penilaian.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kriteria_penilaian', [], true)
+ 5 APPPATH\Controllers\KriteriaPenilaian.php(9): view('kriteria_penilaian')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 15:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 15:31:25 --> ErrorException: Undefined variable $karyawan
+in APPPATH\Views\kriteria_penilaian.php on line 36.
+ 1 APPPATH\Views\kriteria_penilaian.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $karyawan', 'C:\\laragon\\www\\SPK\\app\\Views\\kriteria_penilaian.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK\\app\\Views\\kriteria_penilaian.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kriteria_penilaian', [], true)
+ 5 APPPATH\Controllers\KriteriaPenilaian.php(9): view('kriteria_penilaian')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 15:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-03 15:43:24 --> mysqli_sql_exception: Invalid default value for 'benefit' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-154122_KriteriaPenilaian.php(50): CodeIgniter\Database\Forge->createTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\KriteriaPenilaian->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:44:37 --> mysqli_sql_exception: Invalid default value for 'benefit' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-154122_KriteriaPenilaian.php(50): CodeIgniter\Database\Forge->createTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\KriteriaPenilaian->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:44:51 --> mysqli_sql_exception: Invalid default value for 'benefit' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-154122_KriteriaPenilaian.php(50): CodeIgniter\Database\Forge->createTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\KriteriaPenilaian->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:45:07 --> mysqli_sql_exception: Invalid default value for 'benefit' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-154122_KriteriaPenilaian.php(50): CodeIgniter\Database\Forge->createTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\KriteriaPenilaian->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:46:35 --> mysqli_sql_exception: Invalid default value for 'benefit' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-154122_KriteriaPenilaian.php(46): CodeIgniter\Database\Forge->createTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\KriteriaPenilaian->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:47:18 --> mysqli_sql_exception: Invalid default value for 'benefit' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-154122_KriteriaPenilaian.php(45): CodeIgniter\Database\Forge->createTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\KriteriaPenilaian->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:47:35 --> mysqli_sql_exception: Invalid default value for 'benefit' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-154122_KriteriaPenilaian.php(45): CodeIgniter\Database\Forge->createTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\KriteriaPenilaian->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:48:09 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:50:50 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:53:27 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:53:53 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:54:09 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:55:34 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 15:55:56 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 16:05:15 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 16:05:25 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 16:05:55 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 16:08:44 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 16:09:34 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 16:10:22 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2024-06-03 16:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 16:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 16:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-03 16:14:24 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 16:33:29 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2024-06-03 16:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 16:44:11 --> BadMethodCallException: Call to undefined method App\Models\KriteriaModel::getAll
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\KriteriaPenilaian.php(13): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 16:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 16:45:35 --> BadMethodCallException: Call to undefined method App\Models\KriteriaModel::getAll
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\KriteriaPenilaian.php(13): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 17:23:45 --> BadMethodCallException: Call to undefined method App\Models\KriteriaModel::insertData
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\KriteriaPenilaian.php(34): CodeIgniter\Model->__call('insertData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->store()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+CRITICAL - 2024-06-03 17:25:00 --> BadMethodCallException: Call to undefined method App\Models\KriteriaModel::insertData
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\KriteriaPenilaian.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->store()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 17:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 17:28:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kriteria/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kriteria/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kriteria/index', [], true)
+ 3 APPPATH\Controllers\KriteriaPenilaian.php(16): view('kriteria/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 17:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 17:48:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kriteria_penilaian/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kriteria_penilaian/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kriteria_penilaian/index', [], true)
+ 3 APPPATH\Controllers\KriteriaPenilaian.php(14): view('kriteria_penilaian/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 17:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-03 17:48:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kriteria_penilaian/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kriteria_penilaian/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kriteria_penilaian/index', [], true)
+ 3 APPPATH\Controllers\KriteriaPenilaian.php(14): view('kriteria_penilaian/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK\\public\\index.php')
+INFO - 2024-06-03 17:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 17:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 18:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-03 18:57:00 --> mysqli_sql_exception: Unknown table 'spkmoora.kriteria' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE `kri...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `kri...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `kri...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `kri...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-160236_Kriteria.php(54): CodeIgniter\Database\Forge->dropTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Kriteria->down()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(288): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\MigrateRollback.php(86): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\laragon\www\SPK\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-06-03 19:00:35 --> mysqli_sql_exception: Unknown table 'spkmoora.kriteria' in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE `kri...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `kri...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `kri...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `kri...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-06-03-160236_Kriteria.php(56): CodeIgniter\Database\Forge->dropTable('kriteria')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Kriteria->down()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(288): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\MigrateRollback.php(86): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\laragon\www\SPK\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-06-03 19:01:10 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-03 19:01:18 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-06-03 19:01:21 --> mysqli_sql_exception: Table 'karyawan' already exists in C:\laragon\www\SPK\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\SPK\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\SPK\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\SPK\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\SPK\app\Database\Migrations\2024-01-30-205351_Karyawan.php(54): CodeIgniter\Database\Forge->createTable('karyawan')
+#5 C:\laragon\www\SPK\system\Database\MigrationRunner.php(865): App\Database\Migrations\Karyawan->up()
+#6 C:\laragon\www\SPK\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2024-06-03 19:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 19:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-03 20:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
