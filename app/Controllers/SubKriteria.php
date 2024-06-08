@@ -16,8 +16,10 @@ class SubKriteria extends BaseController
 
     public function index()
     {
+        $uri = service('uri');
         // Mengambil data dari model KriteriaModel
         $data['kriteria'] = $this->kriteriaModel->getAll();
+        $data['uri'] = $uri;
 
         // Menampilkan view 'sub_kriteria' dan melewatkan data kriteria ke view tersebut
         return view('sub_kriteria', $data);

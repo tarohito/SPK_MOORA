@@ -35,6 +35,11 @@
       <![endif]-->
    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css"> -->
    <link href="assets/DataTables/datatables.min.css" rel="stylesheet">
+   <style>
+      ul.list-unstyled.components li.active {
+         background-color: rgba(0, 0, 0, 0.4);
+      }
+   </style>
 
 
 </head>
@@ -65,12 +70,24 @@
             <div class="sidebar_blog_2">
                <h4>Menu Utama</h4>
                <ul class="list-unstyled components">
-                  <li><a href="/"><i class="fa fa-dashboard orange_color"></i> <span>Dashboard</span></a></li>
-                  <li><a href="data_karyawan"><i class="fa fa-group purple_color2"></i> <span>Data Karyawan</span></a></li>
-                  <li> <a href="kriteria_penilaian"><i class="fa fa-pencil yellow_color"></i> <span>Kriteria Penilaian</span></a></li>
-                  <li> <a href="sub_kriteria"><i class="fa fa-paper-plane red_color"></i> <span>Sub Kriteria</span></a></li>
-                  <li><a href="sub_kriteria"><i class="fa fa-table blue1_color"></i> <span>Data Training</span></a></li>
-                  <li><a href="settings.html"><i class="fa fa-bar-chart-o green_color"></i> <span>Hasil Penilaian</span></a></li>
+                  <li class="<?= ($uri->getSegment(1) == "") ? 'active' : '' ?>">
+                     <a href="/"><i class="fa fa-dashboard orange_color"></i> <span>Dashboard</span></a>
+                  </li>
+                  <li class="<?= ($uri->getSegment(1) == "data_karyawan") ? 'active' : '' ?>">
+                     <a href="<?= base_url('data_karyawan') ?>"><i class="fa fa-group purple_color2"></i> <span>Data Karyawan</span></a>
+                  </li>
+                  <li class="<?= ($uri->getSegment(1) == "kriteria_penilaian") ? 'active' : '' ?>">
+                     <a href="<?= base_url('kriteria_penilaian') ?>"><i class="fa fa-pencil yellow_color"></i> <span>Kriteria Penilaian</span></a>
+                  </li>
+                  <li class="<?= ($uri->getSegment(1) == "sub_kriteria") ? 'active' : '' ?>">
+                     <a href="<?= base_url('sub_kriteria') ?>"><i class="fa fa-paper-plane red_color"></i> <span>Sub Kriteria</span></a>
+                  </li>
+                  <li class="<?= ($uri->getSegment(1) == "data_training") ? 'active' : '' ?>">
+                     <a href="<?= base_url('data_training') ?>"><i class="fa fa-table blue1_color"></i> <span>Data Training</span></a>
+                  </li>
+                  <li class="<?= ($uri->getSegment(1) == "settings") ? 'active' : '' ?>">
+                     <a href="<?= base_url('settings.html') ?>"><i class="fa fa-bar-chart-o green_color"></i> <span>Hasil Penilaian</span></a>
+                  </li>
                </ul>
             </div>
          </nav>

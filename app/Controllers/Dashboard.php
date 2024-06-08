@@ -8,6 +8,8 @@ class Dashboard extends BaseController
 {
     public function index()
     {
+        $uri = service('uri');
+
         // Instance model KaryawanModel
         $karyawanModel = new KaryawanModel();
 
@@ -15,7 +17,7 @@ class Dashboard extends BaseController
         $totalKaryawan = $karyawanModel->countAll(); // Menghitung total karyawan
 
         // Menampilkan view dengan data total karyawan
-        return view('dashboard', ['totalKaryawan' => $totalKaryawan]);
+        return view('dashboard', ['totalKaryawan' => $totalKaryawan, 'uri' => $uri]);
     }
 
     public function profil(): string

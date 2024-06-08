@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 
 
 $routes->get('/', 'Dashboard::index', ['filter' => 'auth']); //halaman dashboard
-$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']); //halaman dashboard
+// $routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']); //halaman dashboard
 
 $routes->get('data_karyawan', 'DataKaryawan::index', ['filter' => 'auth']); //halaman data karyawan
 $routes->post('data_karyawan/store', 'DataKaryawan::store'); //tambah data karyawan

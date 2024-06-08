@@ -8,8 +8,10 @@ class KriteriaPenilaian extends BaseController
 {
     public function index()
     {
+        $uri = service('uri');
         $model = new KriteriaModel();
         $data['kriteria'] = $model->findAll();
+        $data['uri'] = $uri;
 
         return view('kriteria_penilaian', $data);
     }

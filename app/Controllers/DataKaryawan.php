@@ -10,14 +10,17 @@ class DataKaryawan extends BaseController
     public function index()
     {
         try {
+            $uri = service('uri');
             $karyawanModel = new KaryawanModel();
             $data['karyawan'] = $karyawanModel->findAll();
+            $data['uri'] = $uri;
 
             return view('data_karyawan', $data);
         } catch (\Exception $e) {
+            $uri = service('uri');
             // Tangani error dengan menampilkan pesan error dalam view
             $errorMessage = $e->getMessage();
-            return view('data_karyawan', ['errorMessage' => $errorMessage]);
+            return view('data_karyawan', ['errorMessage' => $errorMessage, 'uri' => $uri]);
         }
     }
 
