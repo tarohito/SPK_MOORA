@@ -1,3 +1,9 @@
+<?php
+
+$uri = service('uri');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

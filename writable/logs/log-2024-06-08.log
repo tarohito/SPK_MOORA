@@ -1313,3 +1313,119 @@ INFO - 2024-06-08 19:20:43 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-06-08 19:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-08 19:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-08 19:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 19:23:03 --> ErrorException: Undefined variable $uri
+in APPPATH\Views\layout\template.php on line 73.
+ 1 APPPATH\Views\layout\template.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 6 APPPATH\Controllers\Profile.php(14): view('profil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Profile->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-08 19:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 19:23:39 --> ErrorException: Undefined variable $uri
+in APPPATH\Views\layout\template.php on line 73.
+ 1 APPPATH\Views\layout\template.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 6 APPPATH\Controllers\Profile.php(14): view('profil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Profile->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-08 19:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 19:48:27 --> ErrorException: Undefined variable $uri
+in APPPATH\Views\layout\template.php on line 73.
+ 1 APPPATH\Views\layout\template.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 6 APPPATH\Controllers\Profile.php(18): view('profil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Profile->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-08 19:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 19:52:46 --> ErrorException: Undefined variable $uri
+in APPPATH\Views\layout\template.php on line 73.
+ 1 APPPATH\Views\layout\template.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 6 APPPATH\Controllers\Profile.php(17): view('profil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Profile->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-08 19:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 19:52:54 --> ErrorException: Undefined variable $uri
+in APPPATH\Views\layout\template.php on line 73.
+ 1 APPPATH\Views\layout\template.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 6 APPPATH\Controllers\Profile.php(17): view('profil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Profile->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-08 19:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 19:53:20 --> ErrorException: Undefined variable $uri
+in APPPATH\Views\layout\template.php on line 73.
+ 1 APPPATH\Views\layout\template.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 6 APPPATH\Controllers\Profile.php(14): view('profil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Profile->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-08 19:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 19:55:57 --> ErrorException: Undefined variable $uri
+in APPPATH\Views\layout\template.php on line 73.
+ 1 APPPATH\Views\layout\template.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 6 APPPATH\Controllers\Profile.php(16): view('profil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Profile->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-08 19:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 19:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
