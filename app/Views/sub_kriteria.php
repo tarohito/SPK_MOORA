@@ -27,7 +27,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>Sub Kriteria</th>
+                                        <th>Nama Kriteria</th>
                                         <th>Keterangan</th>
                                         <th>Nilai</th>
                                         <th>Aksi</th>
