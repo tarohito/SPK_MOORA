@@ -1,5 +1,6 @@
 <?php
 
+use CodeIgniter\Commands\Utilities\Routes;
 use CodeIgniter\Router\RouteCollection;
 
 /**
@@ -35,3 +36,5 @@ $routes->get('sub_kriteria', 'SubKriteria::index', ['filter' => 'auth']);
 $routes->post('sub_kriteria/store', 'SubKriteria::store');
 $routes->post('sub_kriteria/update', 'SubKriteria::update');
 $routes->match(['get', 'delete'], '/sub_kriteria/(:num)', 'SubKriteria::delete/$1');
+
+$routes->get('data_alternatif', 'DataAlternatif::index');
