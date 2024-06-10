@@ -5,10 +5,10 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class DataAlternatif extends BaseController
+class PenilaianKaryawan extends BaseController
 {
     public function index()
     {
-        return view('data_alternatif');
+        return view('penilaian_karyawan');
     }
 }

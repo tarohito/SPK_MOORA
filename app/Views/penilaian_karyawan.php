@@ -7,7 +7,7 @@
     <div class="row column_title">
         <div class="col-md-12">
             <div class="page_title">
-                <h2>Data Alternatif</h2>
+                <h2>Penilaian Karyawan </h2>
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
             <div class="white_shd full margin_bottom_30">
                 <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
                     <div class="heading1 margin_0">
-                        <h2 class="text-white">List Data Alternatif</h2>
+                        <h2 class="text-white">List Penilaian Karyawan</h2>
                     </div>
                     <div>
                         <button type="button" class="btn btn-success" style="margin-right: 10px;" data-toggle="modal" data-target="#formTambahData"><i class="fa fa-plus"></i>&nbsp;Tambah Data</button>

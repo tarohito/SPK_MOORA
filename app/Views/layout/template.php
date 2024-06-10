@@ -88,8 +88,8 @@ $uri = service('uri');
                   <li class="<?= ($uri->getSegment(1) == "sub_kriteria") ? 'active' : '' ?>">
                      <a href="<?= base_url('sub_kriteria') ?>"><i class="fa fa-paper-plane red_color"></i> <span>Sub Kriteria</span></a>
                   </li>
-                  <li class="<?= ($uri->getSegment(1) == "data_alternatif") ? 'active' : '' ?>">
-                     <a href="<?= base_url('data_alternatif') ?>"><i class="fa fa-table blue1_color"></i> <span>Data Alternatif</span></a>
+                  <li class="<?= ($uri->getSegment(1) == "penilaian_karyawan") ? 'active' : '' ?>">
+                     <a href="<?= base_url('penilaian_karyawan') ?>"><i class="fa fa-table blue1_color"></i> <span>Penilaian Karyawan</span></a>
                   </li>
                   <li class="<?= ($uri->getSegment(1) == "settings") ? 'active' : '' ?>">
                      <a href="<?= base_url('settings.html') ?>"><i class="fa fa-bar-chart-o green_color"></i> <span>Hasil Penilaian</span></a>
