@@ -38,3 +38,6 @@ $routes->post('sub_kriteria/update', 'SubKriteria::update');
 $routes->match(['get', 'delete'], '/sub_kriteria/(:num)', 'SubKriteria::delete/$1');
 
 $routes->get('penilaian_karyawan', 'PenilaianKaryawan::index');
+$routes->post('penilaian_karyawan/store', 'PenilaianKaryawan::store');
+$routes->post('penilaian_karyawan/update', 'PenilaianKaryawan::update');
+$routes->match(['get', 'delete'], '/penilaian_karyawan/(:num)', 'PenilaianKaryawan::delete/$1');

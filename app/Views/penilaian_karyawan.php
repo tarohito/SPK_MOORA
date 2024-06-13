@@ -1,6 +1,6 @@
-<?= $this->extend('layout/template'); ?>
+<?= $this->extend('layout/template') ?>
 
-<?= $this->section('content'); ?>
+<?= $this->section('content') ?>
 
 <div class="container-fluid">
 
@@ -40,26 +40,44 @@
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
-
+                            <tbody>
+                                <?php foreach ($penilaian_karyawan as $a) : ?>
+                                    <tr>
+                                        <td><?= $a['kode'] ?></td>
+                                        <td><?= $a['name'] ?></td>
+                                        <td><?= $a['k1'] ?></td>
+                                        <td><?= $a['k2'] ?></td>
+                                        <td><?= $a['k3'] ?></td>
+                                        <td><?= $a['k4'] ?></td>
+                                        <td><?= $a['k5'] ?></td>
+                                        <td>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editModal<?= $a['id'] ?>">Edit</button>
+                                                <button href="#" data-href="<?= base_url('penilaian_karyawan/' . $a['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Modal Tambah Data -->
+        <!-- create -->
         <div class="modal fade" id="formTambahData" tabindex="-1" role="dialog" aria-labelledby="modalTambahTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header dash_head">
-                        <h4 class="modal-title text-white font-weight-normal" id="modalTambahTitle">Tambah Data Karyawan</h4>
+                        <h4 class="modal-title text-white font-weight-normal" id="modalTambahTitle">Tambah Data Karyawan
+                        </h4>
                         <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body modal-padding">
-                        <!-- Form tambah data disini -->
-                        <form action="<?= base_url('data_karyawan/store') ?>" method="post">
+                        <form action="<?= base_url('penilaian_karyawan/store') ?>" method="post">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="kode">Kode</label>
@@ -67,37 +85,100 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="nama">Nama Karyawan</label>
-                                    <input type="text" class="form-control" id="nama" name="nama" required>
+                                    <select class="form-control" name="karyawan_id" id="karyawan_id">
+                                        <option value="" disabled selected>Pilih Karyawan</option>
+                                        <?php foreach ($karyawan as $k) : ?>
+                                            <option value="<?= $k['id'] ?>"><?= $k['name'] ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="sikap_etika">Sikap & Etika Kerja (K1)</label>
-                                    <input type="text" class="form-control" id="sikap_etika" name="sikap_etika" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="absensi">Absensi (K2)</label>
-                                    <input type="text" class="form-control" id="absensi" name="absensi" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="target_pekerjaan">Target Pekerjaan (K3)</label>
-                                    <input type="text" class="form-control" id="target_pekerjaan" name="target_pekerjaan" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="inisiatif_pekerjaan">Inisiatif Pekerjaan (K4)</label>
-                                    <input type="text" class="form-control" id="inisiatif_pekerjaan" name="inisiatif_pekerjaan" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="lama_kerja">Lama Kerja (K5)</label>
-                                    <input type="text" class="form-control" id="lama_kerja" name="lama_kerja" required>
-                                </div>
+                                <?php foreach ($kriteria as $k) : ?>
+                                    <div class="form-group col-md-6">
+                                        <label for="<?= 'kriteria_' . $k['id'] ?>"><?= $k['nama_kriteria'] ?> (<?= $k['kode_kriteria'] ?>)</label>
+                                        <select class="form-control" name="sub_kriteria[<?= $k['kode_kriteria'] ?>]" id="sub_kriteria_id_<?= $k['id'] ?>">
+                                            <option value="" disabled selected>Pilih Sub Kriteria</option>
+                                            <?php foreach ($sub_kriteria as $sk) : ?>
+                                                <?php if ($sk['kriteria_id'] == $k['id']) : ?>
+                                                    <option value="<?= $sk['nilai'] ?>"><?= $sk['keterangan'] ?></option>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- edit -->
+        <?php foreach ($penilaian_karyawan as $a) : ?>
+            <div class="modal fade" id="editModal<?= $a['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="editModalTitle<?= $a['id'] ?>" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header dash_head">
+                            <h4 class="modal-title text-white font-weight-normal" id="editModalTitle<?= $a['id'] ?>">Edit Data Karyawan</h4>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body modal-padding">
+                            <form action="<?= base_url('penilaian_karyawan/update/') ?>" method="post">
+                                <input type="hidden" name="id" value="<?= $a['id'] ?>">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="edit_kode">Kode</label>
+                                        <input type="text" class="form-control" id="edit_kode" name="edit_kode" value="<?= $a['kode'] ?>" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="edit_karyawan_id">Nama Karyawan</label>
+                                        <select class="form-control" name="edit_karyawan_id" id="edit_karyawan_id">
+                                            <option value="" disabled>Pilih Karyawan</option>
+                                            <?php foreach ($karyawan as $k) : ?>
+                                                <option value="<?= $k['id'] ?>" <?= $k['id'] == $a['karyawan_id'] ? 'selected' : '' ?>><?= $k['name'] ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <?php foreach ($kriteria as $k) : ?>
+                                        <div class="form-group col-md-6">
+                                            <label for="<?= 'edit_kriteria_' . $k['id'] ?>"><?= $k['nama_kriteria'] ?> (<?= $k['kode_kriteria'] ?>)</label>
+                                            <select class="form-control" name="edit_sub_kriteria[<?= $k['kode_kriteria'] ?>]" id="edit_sub_kriteria_<?= $k['id'] ?>">
+                                                <option value="" disabled>Pilih Sub Kriteria</option>
+                                                <?php foreach ($sub_kriteria as $sk) : ?>
+                                                    <?php if ($sk['kriteria_id'] == $k['id']) : ?>
+                                                        <option value="<?= $sk['nilai'] ?>" <?= isset($a[$k['kode_kriteria']]) && $sk['nilai'] == $a[$k['kode_kriteria']] ? 'selected' : '' ?>><?= $sk['keterangan'] ?></option>
+                                                    <?php endif; ?>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach ?>
+
+
+        <!-- delete -->
+        <div id="confirm-dialog" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center"> <!-- Tambahkan class text-center -->
+                        <h4 class="h2">Apa Anda Yakin ??</h4>
+                        <p>Data tersebut akan terhapus dan hilang selamanya</p>
+                    </div>
+                    <div class="modal-footer justify-content-center"> <!-- Tambahkan class justify-content-center -->
+                        <a href="#" role="button" id="delete-button" class="btn btn-danger">Hapus</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
                     </div>
                 </div>
             </div>
@@ -115,4 +196,4 @@
 </div>
 
 
-<?= $this->endSection(); ?>
+<?= $this->endSection() ?>

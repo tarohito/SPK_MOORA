@@ -37,4 +37,11 @@ class SubKriteriaM extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function ambilNamaAndKodeDariKriteria()
+    {
+        return $this->select('sub_kriteria.*, kriteria.nama_kriteria, kriteria.kode_kriteria')
+        ->join('kriteria', 'kriteria.id = sub_kriteria.kriteria_id')
+        ->findAll();
+    }
 }
