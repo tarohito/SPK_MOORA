@@ -62,28 +62,38 @@
                         <form action="<?= base_url('data_karyawan/store') ?>" method="post">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="name">Nama</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <label for="kode">Kode</label>
+                                    <input type="text" class="form-control" id="kode" name="kode" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <label for="nama">Nama Karyawan</label>
+                                    <input type="text" class="form-control" id="nama" name="nama" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="divisi">Jabatan</label>
-                                    <input type="text" class="form-control" id="divisi" name="divisi" required>
+                                    <label for="sikap_etika">Sikap & Etika Kerja (K1)</label>
+                                    <input type="text" class="form-control" id="sikap_etika" name="sikap_etika" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="no_hp">No. HP</label>
-                                    <input type="text" class="form-control" id="no_hp" name="no_hp" required>
+                                    <label for="absensi">Absensi (K2)</label>
+                                    <input type="text" class="form-control" id="absensi" name="absensi" required>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="alamat">Alamat</label>
-                                    <textarea class="form-control" id="alamat" name="alamat" required></textarea>
+                                <div class="form-group col-md-6">
+                                    <label for="target_pekerjaan">Target Pekerjaan (K3)</label>
+                                    <input type="text" class="form-control" id="target_pekerjaan" name="target_pekerjaan" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inisiatif_pekerjaan">Inisiatif Pekerjaan (K4)</label>
+                                    <input type="text" class="form-control" id="inisiatif_pekerjaan" name="inisiatif_pekerjaan" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="lama_kerja">Lama Kerja (K5)</label>
+                                    <input type="text" class="form-control" id="lama_kerja" name="lama_kerja" required>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
@@ -92,6 +102,7 @@
                 </div>
             </div>
         </div>
+
 
     </div>
 </div>
