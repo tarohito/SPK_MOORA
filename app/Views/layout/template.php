@@ -168,6 +168,11 @@ $uri = service('uri');
          responsive: true
       });
    </script>
+   <script type="text/javascript">
+      let table2 = new DataTable('#myTable2', {
+         responsive: true
+      });
+   </script>
 
    <script>
       function confirmToDelete(el) {

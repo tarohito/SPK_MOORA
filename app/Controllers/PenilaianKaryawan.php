@@ -20,38 +20,65 @@ class PenilaianKaryawan extends BaseController
         $subkriteriaModel = new SubKriteriaM();
         $kriteriaModel = new KriteriaModel();
 
-        $data['penilaian_karyawan'] = $PenilaianKaryawanM
-            ->select('penilaian_karyawan.*, karyawan.name')
-            ->join('karyawan', 'karyawan.id = penilaian_karyawan.karyawan_id')
-            ->findAll();
+        $kriteria = $kriteriaModel->findAll();
 
-        $data['penilaian_karyawan'] = $PenilaianKaryawanM->getPenilaianKaryawan();
+        $builder = $PenilaianKaryawanM
+            ->select('penilaian_karyawan.*, karyawan.name')
+            ->join('karyawan', 'karyawan.id = penilaian_karyawan.karyawan_id');
+
+        foreach ($kriteria as $index => $k) {
+            $alias = 'sk' . ($index + 1);
+            $column = 'k' . ($index + 1);
+            $builder = $builder->join("sub_kriteria as $alias", "$alias.nilai = penilaian_karyawan.$column AND $alias.kriteria_id = {$k['id']}", 'left')
+            ->select("$alias.keterangan as {$column}_ket");
+        }
+
+        $data['penilaian_karyawan'] = $builder->findAll();
+
         $data['karyawan'] = $karyawanModel->orderBy('name', 'ASC')->findAll();
         $data['sub_kriteria'] = $subkriteriaModel->ambilNamaAndKodeDariKriteria();
-        $data['kriteria'] = $kriteriaModel->findAll();
+        $data['kriteria'] = $kriteria;
 
         $data['uri'] = $uri;
 
         return view('penilaian_karyawan', $data);
     }
 
+
+
     public function store()
     {
         $PenilaianKaryawanM = new PenilaianKaryawanM();
 
+        $validation = \Config\Services::validation();
+
         $data = [
             'karyawan_id' => $this->request->getPost('karyawan_id'),
-            'k1' => $this->request->getPost('sub_kriteria[K1]') ?? null,
-            'k2' => $this->request->getPost('sub_kriteria[K2]') ?? null,
-            'k3' => $this->request->getPost('sub_kriteria[K3]') ?? null,
-            'k4' => $this->request->getPost('sub_kriteria[K4]') ?? null,
-            'k5' => $this->request->getPost('sub_kriteria[K5]') ?? null,
+            'k1' => $this->request->getPost('k1'),
+            'k2' => $this->request->getPost('k2'),
+            'k3' => $this->request->getPost('k3'),
+            'k4' => $this->request->getPost('k4'),
+            'k5' => $this->request->getPost('k5'),
         ];
 
-        $PenilaianKaryawanM->save($data);
+        $validation->setRules([
+            'karyawan_id' => 'required',
+            'k1' => 'required',
+            'k2' => 'required',
+            'k3' => 'required',
+            'k4' => 'required',
+            'k5' => 'required|numeric',
+        ]);
 
-        return redirect()->to('penilaian_karyawan');
+        if ($validation->run($data)) {
+            $PenilaianKaryawanM->save($data);
+            return redirect()->to('penilaian_karyawan')->with('success', 'Data berhasil disimpan.');
+        } else {
+            return redirect()->back()->withInput()->with('errors', $validation->getErrors());
+        }
     }
+
+
 
     public function update()
     {
@@ -63,7 +90,7 @@ class PenilaianKaryawan extends BaseController
             'k2' => $this->request->getPost('edit_sub_kriteria[K2]') ?? null,
             'k3' => $this->request->getPost('edit_sub_kriteria[K3]') ?? null,
             'k4' => $this->request->getPost('edit_sub_kriteria[K4]') ?? null,
-            'k5' => $this->request->getPost('edit_sub_kriteria[K5]') ?? null,
+            'k5' => $this->request->getPost('k5') ?? null,
         ];
 
         $id = $this->request->getPost('id');
