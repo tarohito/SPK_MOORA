@@ -41,12 +41,12 @@
                             <tbody>
                                 <?php foreach ($penilaian_karyawan as $row) : ?>
                                     <tr>
-                                        <td><?= $row['name'] ?></td>
-                                        <td><?= $row['k1_ket'] ?></td>
-                                        <td><?= $row['k2_ket'] ?></td>
-                                        <td><?= $row['k3_ket'] ?></td>
-                                        <td><?= $row['k4_ket'] ?></td>
-                                        <td><?= $row['k5'] ?> Tahun</td>
+                                        <td><?= ucwords($row['name']) ?></td>
+                                        <td><?= ucwords($row['k1_ket']) ?></td>
+                                        <td><?= ucwords($row['k2_ket']) ?></td>
+                                        <td><?= ucwords($row['k3_ket']) ?></td>
+                                        <td><?= ucwords($row['k4_ket']) ?></td>
+                                        <td><?= ucwords($row['k5']) ?> Tahun</td>
                                         <td>
                                             <div class="btn-group" role="group">
                                                 <button type="button" class="btn btn-warning fa fa-pencil" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>"></button>
@@ -88,7 +88,7 @@
                             <tbody>
                                 <?php foreach ($penilaian_karyawan as $row) : ?>
                                     <tr>
-                                        <td><?= $row['name'] ?></td>
+                                        <td><?= ucwords($row['name']) ?></td>
                                         <td><?= $row['k1'] ?></td>
                                         <td><?= $row['k2'] ?></td>
                                         <td><?= $row['k3'] ?></td>
