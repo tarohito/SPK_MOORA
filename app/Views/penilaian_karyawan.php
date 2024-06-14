@@ -83,7 +83,6 @@
                                     <th>Target Pekerjaan (K3)</th>
                                     <th>Inisiatif Pekerjaan (K4)</th>
                                     <th>Lama Kerja (K5)</th>
-                                    <!-- <th>Aksi</th> -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -106,12 +105,6 @@
                                             }
                                             ?>
                                         </td>
-                                        <!-- <td>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>">Edit</button>
-                                                <button href="#" data-href="<?= base_url('penilaian_karyawan/' . $row['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
-                                            </div>
-                                        </td> -->
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>
