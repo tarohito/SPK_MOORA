@@ -64,6 +64,7 @@
             </div>
         </div>
 
+        <!-- tabel konversi -->
         <div class="col-md-12">
             <div class="white_shd full margin_bottom_30">
                 <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
@@ -71,8 +72,6 @@
                         <h2 class="text-white">Tabel Konversi Penilaian</h2>
                     </div>
                 </div>
-
-                <!-- tabel konversi -->
                 <div class="table_section padding_infor_info">
                     <div class="table-responsive-sm">
                         <table id="myTable2" class="table">
@@ -95,7 +94,18 @@
                                         <td><?= $row['k2'] ?></td>
                                         <td><?= $row['k3'] ?></td>
                                         <td><?= $row['k4'] ?></td>
-                                        <td><?= $row['k5'] ?></td>
+                                        <td>
+                                            <?php
+                                            $k5_value = $row['k5'];
+                                            if ($k5_value > 10) {
+                                                echo 5;
+                                            } elseif ($k5_value >= 6 && $k5_value <= 10) {
+                                                echo 3;
+                                            } else {
+                                                echo 1;
+                                            }
+                                            ?>
+                                        </td>
                                         <!-- <td>
                                             <div class="btn-group" role="group">
                                                 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>">Edit</button>
