@@ -158,6 +158,7 @@ h1 {
 
 .img-responsive {
   max-width: 100%;
+  justify-content: center;
 }
 
 h3 {
