@@ -106,14 +106,7 @@
                                 <!-- Form edit data disini -->
                                 <form action="<?= base_url('sub_kriteria/update') ?>" method="post">
                                     <input type="hidden" name="id" value="<?= $a['id'] ?>">
-                                    <div class="form-group">
-                                        <label for="kriteria_id">Kriteria</label>
-                                        <select class="form-control" name="kriteria_id" id="kriteria_id">
-                                            <?php foreach ($kriteria as $k) : ?>
-                                                <option value="<?= $k['id'] ?>" <?= $k['id'] == $a['kriteria_id'] ? 'selected' : '' ?>><?= $k['nama_kriteria'] ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </div>
+                                    
                                     <div class="form-group">
                                         <label for="keterangan">Keterangan</label>
                                         <input type="text" class="form-control" id="keterangan" name="keterangan" required value="<?= $a['keterangan'] ?>">
