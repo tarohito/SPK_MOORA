@@ -25,6 +25,7 @@ class PenilaianKaryawan extends BaseController
             ->join('karyawan', 'karyawan.id = penilaian_karyawan.karyawan_id')
             ->findAll();
 
+        $data['penilaian_karyawan'] = $PenilaianKaryawanM->getPenilaianKaryawan();
         $data['karyawan'] = $karyawanModel->orderBy('name', 'ASC')->findAll();
         $data['sub_kriteria'] = $subkriteriaModel->ambilNamaAndKodeDariKriteria();
         $data['kriteria'] = $kriteriaModel->findAll();

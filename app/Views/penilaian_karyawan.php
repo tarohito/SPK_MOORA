@@ -43,11 +43,11 @@
                                 <?php foreach ($penilaian_karyawan as $a) : ?>
                                     <tr>
                                         <td><?= $a['name'] ?></td>
-                                        <td><?= $a['k1'] ?></td>
-                                        <td><?= $a['k2'] ?></td>
-                                        <td><?= $a['k3'] ?></td>
-                                        <td><?= $a['k4'] ?></td>
-                                        <td><?= $a['k5'] ?></td>
+                                        <td><?= $a['k1_ket'] ?></td>
+                                        <td><?= $a['k2_ket'] ?></td>
+                                        <td><?= $a['k3_ket'] ?></td>
+                                        <td><?= $a['k4_ket'] ?></td>
+                                        <td><?= $a['k5_ket'] ?></td>
                                         <td>
                                             <div class="btn-group" role="group">
                                                 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editModal<?= $a['id'] ?>">Edit</button>
@@ -124,7 +124,7 @@
                             <form action="<?= base_url('penilaian_karyawan/update/') ?>" method="post">
                                 <input type="hidden" name="id" value="<?= $a['id'] ?>">
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-12">
                                         <label for="edit_karyawan_id">Nama Karyawan</label>
                                         <select class="form-control" name="edit_karyawan_id" id="edit_karyawan_id">
                                             <option value="" disabled>Pilih Karyawan</option>
@@ -142,7 +142,11 @@
                                                 <option value="" disabled>Pilih Sub Kriteria</option>
                                                 <?php foreach ($sub_kriteria as $sk) : ?>
                                                     <?php if ($sk['kriteria_id'] == $k['id']) : ?>
-                                                        <option value="<?= $sk['nilai'] ?>" <?= isset($a[$k['kode_kriteria']]) && $sk['nilai'] == $a[$k['kode_kriteria']] ? 'selected' : '' ?>><?= $sk['keterangan'] ?></option>
+                                                        <?php
+                                                        $kolom_kriteria = strtolower($k['kode_kriteria']);
+                                                        $selected = ($sk['nilai'] == $a[$kolom_kriteria]) ? 'selected' : '';
+                                                        ?>
+                                                        <option value="<?= $sk['nilai'] ?>" <?= $selected ?>><?= $sk['keterangan'] ?></option>
                                                     <?php endif; ?>
                                                 <?php endforeach; ?>
                                             </select>
@@ -155,7 +159,8 @@
                     </div>
                 </div>
             </div>
-        <?php endforeach ?>
+        <?php endforeach; ?>
+
 
 
         <!-- delete -->

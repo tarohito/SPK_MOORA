@@ -525,3 +525,15 @@ in APPPATH\Views\penilaian_karyawan.php on line 119.
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
+CRITICAL - 2024-06-13 23:53:58 --> ErrorException: Undefined array key "K1"
+in APPPATH\Views\penilaian_karyawan.php on line 154.
+ 1 APPPATH\Views\penilaian_karyawan.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 154)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
+ 5 APPPATH\Controllers\PenilaianKaryawan.php(34): view('penilaian_karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
