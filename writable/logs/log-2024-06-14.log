@@ -335,3 +335,76 @@ in APPPATH\Views\penilaian_karyawan.php on line 149.
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
+INFO - 2024-06-14 14:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 14:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 14:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 14:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-14 15:23:45 --> mysqli_sql_exception: Table 'spkmoora.penilaian_karyawan' doesn't exist in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `penilai...', 0)
+#1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penilai...')
+#2 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penilai...')
+#3 C:\laragon\www\SPK_MOORA\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilai...', Array, false)
+#4 C:\laragon\www\SPK_MOORA\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SPK_MOORA\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\SPK_MOORA\app\Controllers\PenilaianKaryawan.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+#8 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+#9 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\SPK_MOORA\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\SPK_MOORA\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-06-14 15:23:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.penilaian_karyawan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PenilaianKaryawan.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+CRITICAL - 2024-06-14 15:23:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.penilaian_karyawan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PenilaianKaryawan.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+CRITICAL - 2024-06-14 15:23:45 --> [Caused by] mysqli_sql_exception: Table 'spkmoora.penilaian_karyawan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PenilaianKaryawan.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')

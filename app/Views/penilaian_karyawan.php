@@ -39,24 +39,6 @@
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <?php foreach ($penilaian_karyawan as $a) : ?>
-                                    <tr>
-                                        <td><?= $a['name'] ?></td>
-                                        <td><?= $a['k1_ket'] ?></td>
-                                        <td><?= $a['k2_ket'] ?></td>
-                                        <td><?= $a['k3_ket'] ?></td>
-                                        <td><?= $a['k4_ket'] ?></td>
-                                        <td><?= $a['k5_ket'] ?></td>
-                                        <td>
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editModal<?= $a['id'] ?>">Edit</button>
-                                                <button href="#" data-href="<?= base_url('penilaian_karyawan/' . $a['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -68,7 +50,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header dash_head">
-                        <h4 class="modal-title text-white font-weight-normal" id="modalTambahTitle">Tambah Data Karyawan
+                        <h4 class="modal-title text-white font-weight-normal" id="modalTambahTitle">Tambah Penilaian Karyawan
                         </h4>
                         <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
