@@ -10,6 +10,7 @@
             </div>
         </div>
     </div>
+
     <?php foreach ($kriteria as $row) : ?>
         <div class="row column1">
             <div class="col-md-12">
@@ -106,7 +107,7 @@
                                 <!-- Form edit data disini -->
                                 <form action="<?= base_url('sub_kriteria/update') ?>" method="post">
                                     <input type="hidden" name="id" value="<?= $a['id'] ?>">
-                                    
+
                                     <div class="form-group">
                                         <label for="keterangan">Keterangan</label>
                                         <input type="text" class="form-control" id="keterangan" name="keterangan" required value="<?= $a['keterangan'] ?>">

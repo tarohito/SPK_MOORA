@@ -46,8 +46,6 @@ $uri = service('uri');
          background-color: rgba(0, 0, 0, 0.4);
       }
    </style>
-
-
 </head>
 
 <body class="dashboard dashboard_1">
