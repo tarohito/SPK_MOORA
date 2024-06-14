@@ -30,7 +30,6 @@
                         <table id="myTable" class="table">
                             <thead>
                                 <tr>
-                                    <th>Kode</th>
                                     <th>Nama Karyawan</th>
                                     <th>Sikap & Etika Kerja (K1)</th>
                                     <th>Absensi (K2)</th>
@@ -43,7 +42,6 @@
                             <tbody>
                                 <?php foreach ($penilaian_karyawan as $a) : ?>
                                     <tr>
-                                        <td><?= $a['kode'] ?></td>
                                         <td><?= $a['name'] ?></td>
                                         <td><?= $a['k1'] ?></td>
                                         <td><?= $a['k2'] ?></td>
@@ -79,11 +77,7 @@
                     <div class="modal-body modal-padding">
                         <form action="<?= base_url('penilaian_karyawan/store') ?>" method="post">
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="kode">Kode</label>
-                                    <input type="text" class="form-control" id="kode" name="kode" required>
-                                </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-12">
                                     <label for="nama">Nama Karyawan</label>
                                     <select class="form-control" name="karyawan_id" id="karyawan_id">
                                         <option value="" disabled selected>Pilih Karyawan</option>
@@ -130,10 +124,6 @@
                             <form action="<?= base_url('penilaian_karyawan/update/') ?>" method="post">
                                 <input type="hidden" name="id" value="<?= $a['id'] ?>">
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="edit_kode">Kode</label>
-                                        <input type="text" class="form-control" id="edit_kode" name="edit_kode" value="<?= $a['kode'] ?>" required>
-                                    </div>
                                     <div class="form-group col-md-6">
                                         <label for="edit_karyawan_id">Nama Karyawan</label>
                                         <select class="form-control" name="edit_karyawan_id" id="edit_karyawan_id">

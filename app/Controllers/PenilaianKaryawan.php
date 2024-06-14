@@ -39,7 +39,6 @@ class PenilaianKaryawan extends BaseController
         $PenilaianKaryawanM = new PenilaianKaryawanM();
 
         $data = [
-            'kode' => $this->request->getPost('kode'),
             'karyawan_id' => $this->request->getPost('karyawan_id'),
             'k1' => $this->request->getPost('sub_kriteria[K1]') ?? null,
             'k2' => $this->request->getPost('sub_kriteria[K2]') ?? null,
@@ -58,7 +57,6 @@ class PenilaianKaryawan extends BaseController
         $PenilaianKaryawanM = new PenilaianKaryawanM();
 
         $data = [
-            'kode' => $this->request->getPost('edit_kode'),
             'karyawan_id' => $this->request->getPost('edit_karyawan_id'),
             'k1' => $this->request->getPost('edit_sub_kriteria[K1]') ?? null,
             'k2' => $this->request->getPost('edit_sub_kriteria[K2]') ?? null,
@@ -82,4 +80,3 @@ class PenilaianKaryawan extends BaseController
         return redirect()->to(base_url('penilaian_karyawan'));
     }
 }
-

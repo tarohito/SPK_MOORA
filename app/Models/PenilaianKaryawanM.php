@@ -12,7 +12,7 @@ class PenilaianKaryawanM extends Model
     protected $returnType = 'array';
     protected $useSoftDeletes = false;
     protected $protectFields = true;
-    protected $allowedFields = ['kode', 'karyawan_id', 'k1', 'k2', 'k3', 'k4', 'k5'];
+    protected $allowedFields = ['karyawan_id', 'k1', 'k2', 'k3', 'k4', 'k5'];
 
     // Dates
     protected $useTimestamps = true;

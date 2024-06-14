@@ -12,11 +12,6 @@ class PenilaianKaryawan extends Migration
                 'unsigned' => TRUE,
                 'auto_increment' => TRUE
             ],
-            'kode' => [
-                'type' => 'VARCHAR',
-                'constraint' => 255,
-                'null' => true,
-            ],
             'karyawan_id' => [
                 'type' => 'INT',
                 'constraint' => 11,
