@@ -1,345 +1,18 @@
-INFO - 2024-06-14 10:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 10:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 10:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 10:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 10:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 10:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 10:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 13:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 13:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 13:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 13:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 13:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2024-06-14 13:37:44 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 13:37:53 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 13:42:04 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 146.
- 1 APPPATH\Views\penilaian_karyawan.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 146)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 13:42:43 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 146.
- 1 APPPATH\Views\penilaian_karyawan.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 146)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 13:45:56 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 146.
- 1 APPPATH\Views\penilaian_karyawan.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 146)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 13:50:32 --> ErrorException: Undefined array key "kode_kriteria"
-in APPPATH\Views\penilaian_karyawan.php on line 118.
- 1 APPPATH\Views\penilaian_karyawan.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_kriteria"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 118)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 13:51:25 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 13:52:55 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 13:54:41 --> ErrorException: Undefined array key 12
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 12', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:02:46 --> ErrorException: Undefined array key 12
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 12', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:06:43 --> ErrorException: Undefined array key 12
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 12', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:07:21 --> ErrorException: Undefined array key 12
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 12', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:07:54 --> ErrorException: Undefined array key "nilai"
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nilai"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:08:18 --> ErrorException: Undefined array key "k1_ket"
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "k1_ket"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:08:29 --> ErrorException: Undefined array key "k1_ket"
-in APPPATH\Views\penilaian_karyawan.php on line 145.
- 1 APPPATH\Views\penilaian_karyawan.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "k1_ket"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 145)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-ERROR - 2024-06-14 14:33:44 --> mysqli_sql_exception: Column 'k1' cannot be null in C:\laragon\www\spkmoora\system\Database\MySQLi\Connection.php:306
+ERROR - 2024-06-14 15:34:18 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
 Stack trace:
-#0 C:\laragon\www\spkmoora\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pe...', 0)
-#1 C:\laragon\www\spkmoora\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
-#2 C:\laragon\www\spkmoora\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
-#3 C:\laragon\www\spkmoora\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
-#4 C:\laragon\www\spkmoora\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\laragon\www\spkmoora\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
-#6 C:\laragon\www\spkmoora\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
-#7 C:\laragon\www\spkmoora\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
-#8 C:\laragon\www\spkmoora\app\Controllers\PenilaianKaryawan.php(51): CodeIgniter\BaseModel->save(Array)
-#9 C:\laragon\www\spkmoora\system\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->store()
-#10 C:\laragon\www\spkmoora\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
-#11 C:\laragon\www\spkmoora\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#12 C:\laragon\www\spkmoora\public\index.php(79): CodeIgniter\CodeIgniter->run()
-#13 C:\laragon\www\spkmoora\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
-#14 {main}
-CRITICAL - 2024-06-14 14:33:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'k1' cannot be null
-in SYSTEMPATH\Database\BaseConnection.php on line 647.
- 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `penilaian_karyawan` (`karyawan_id`, `k1`, `k2`, `k3`, `k4`, `k5`, `created_at`, `updated_at`) VALUES (:karyawan_id:, :k1:, :k2:, :k3:, :k4:, :k5:, :created_at:, :updated_at:)', [...], false)
- 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
- 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
- 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
- 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
- 6 APPPATH\Controllers\PenilaianKaryawan.php(51): CodeIgniter\BaseModel->save([...])
- 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->store()
- 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:33:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'k1' cannot be null
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
- 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `penilaian_karyawan` (`karyawan_id`, `k1`, `k2`, `k3`, `k4`, `k5`, `created_at`, `updated_at`) VALUES (\'54\', NULL, NULL, NULL, NULL, NULL, \'2024-06-14 14:33:44\', \'2024-06-14 14:33:44\')')
- 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `penilaian_karyawan` (`karyawan_id`, `k1`, `k2`, `k3`, `k4`, `k5`, `created_at`, `updated_at`) VALUES (\'54\', NULL, NULL, NULL, NULL, NULL, \'2024-06-14 14:33:44\', \'2024-06-14 14:33:44\')')
- 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `penilaian_karyawan` (`karyawan_id`, `k1`, `k2`, `k3`, `k4`, `k5`, `created_at`, `updated_at`) VALUES (:karyawan_id:, :k1:, :k2:, :k3:, :k4:, :k5:, :created_at:, :updated_at:)', [...], false)
- 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
- 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
- 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
- 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
- 8 APPPATH\Controllers\PenilaianKaryawan.php(51): CodeIgniter\BaseModel->save([...])
- 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->store()
-10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
-11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:33:44 --> [Caused by] mysqli_sql_exception: Column 'k1' cannot be null
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `penilaian_karyawan` (`karyawan_id`, `k1`, `k2`, `k3`, `k4`, `k5`, `created_at`, `updated_at`) VALUES (\'54\', NULL, NULL, NULL, NULL, NULL, \'2024-06-14 14:33:44\', \'2024-06-14 14:33:44\')', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `penilaian_karyawan` (`karyawan_id`, `k1`, `k2`, `k3`, `k4`, `k5`, `created_at`, `updated_at`) VALUES (\'54\', NULL, NULL, NULL, NULL, NULL, \'2024-06-14 14:33:44\', \'2024-06-14 14:33:44\')')
- 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `penilaian_karyawan` (`karyawan_id`, `k1`, `k2`, `k3`, `k4`, `k5`, `created_at`, `updated_at`) VALUES (\'54\', NULL, NULL, NULL, NULL, NULL, \'2024-06-14 14:33:44\', \'2024-06-14 14:33:44\')')
- 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `penilaian_karyawan` (`karyawan_id`, `k1`, `k2`, `k3`, `k4`, `k5`, `created_at`, `updated_at`) VALUES (:karyawan_id:, :k1:, :k2:, :k3:, :k4:, :k5:, :created_at:, :updated_at:)', [...], false)
- 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
- 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
- 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
- 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
- 9 APPPATH\Controllers\PenilaianKaryawan.php(51): CodeIgniter\BaseModel->save([...])
-10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->store()
-11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
-12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:34:17 --> ErrorException: Undefined array key "kK1"
-in APPPATH\Views\penilaian_karyawan.php on line 149.
- 1 APPPATH\Views\penilaian_karyawan.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kK1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 149)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:35:16 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 149.
- 1 APPPATH\Views\penilaian_karyawan.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 149)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:42:53 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 149.
- 1 APPPATH\Views\penilaian_karyawan.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 149)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:43:05 --> ErrorException: Undefined array key "kK1"
-in APPPATH\Views\penilaian_karyawan.php on line 149.
- 1 APPPATH\Views\penilaian_karyawan.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kK1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 149)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:43:20 --> ErrorException: Undefined array key 1
-in APPPATH\Views\penilaian_karyawan.php on line 149.
- 1 APPPATH\Views\penilaian_karyawan.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 149)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:43:35 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 149.
- 1 APPPATH\Views\penilaian_karyawan.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 149)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-CRITICAL - 2024-06-14 14:44:49 --> ErrorException: Undefined array key "K1"
-in APPPATH\Views\penilaian_karyawan.php on line 149.
- 1 APPPATH\Views\penilaian_karyawan.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "K1"', 'C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php', 149)
- 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\spkmoora\\app\\Views\\penilaian_karyawan.php')
- 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
- 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
- 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
- 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
- 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\spkmoora\\public\\index.php')
-INFO - 2024-06-14 14:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 14:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 14:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-06-14 14:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-ERROR - 2024-06-14 15:23:45 --> mysqli_sql_exception: Table 'spkmoora.penilaian_karyawan' doesn't exist in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
+#0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK_MOORA\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK_MOORA\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK_MOORA\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK_MOORA\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK_MOORA\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK_MOORA\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK_MOORA\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK_MOORA\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-14 15:34:39 --> mysqli_sql_exception: Table 'spkmoora.penilaian_karyawan' doesn't exist in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
 Stack trace:
 #0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `penilai...', 0)
 #1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penilai...')
@@ -354,7 +27,7 @@ Stack trace:
 #10 C:\laragon\www\SPK_MOORA\public\index.php(79): CodeIgniter\CodeIgniter->run()
 #11 C:\laragon\www\SPK_MOORA\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
 #12 {main}
-CRITICAL - 2024-06-14 15:23:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.penilaian_karyawan' doesn't exist
+CRITICAL - 2024-06-14 15:34:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.penilaian_karyawan' doesn't exist
 in SYSTEMPATH\Database\BaseConnection.php on line 647.
  1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
 FROM `penilaian_karyawan`
@@ -367,7 +40,7 @@ JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], fa
  7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
-CRITICAL - 2024-06-14 15:23:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.penilaian_karyawan' doesn't exist
+CRITICAL - 2024-06-14 15:34:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.penilaian_karyawan' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
  1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
 FROM `penilaian_karyawan`
@@ -386,7 +59,7 @@ JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], fa
  9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
-CRITICAL - 2024-06-14 15:23:45 --> [Caused by] mysqli_sql_exception: Table 'spkmoora.penilaian_karyawan' doesn't exist
+CRITICAL - 2024-06-14 15:34:39 --> [Caused by] mysqli_sql_exception: Table 'spkmoora.penilaian_karyawan' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
 FROM `penilaian_karyawan`
@@ -408,3 +81,323 @@ JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], fa
 10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-14 15:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-14 15:34:47 --> mysqli_sql_exception: Table 'spkmoora.kriteria' doesn't exist in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SPK_MOORA\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SPK_MOORA\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SPK_MOORA\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\SPK_MOORA\app\Controllers\KriteriaPenilaian.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+#8 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+#9 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\SPK_MOORA\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\SPK_MOORA\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-06-14 15:34:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.kriteria' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kriteria`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\KriteriaPenilaian.php(13): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+CRITICAL - 2024-06-14 15:34:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.kriteria' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kriteria`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kriteria`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kriteria`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\KriteriaPenilaian.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+CRITICAL - 2024-06-14 15:34:47 --> [Caused by] mysqli_sql_exception: Table 'spkmoora.kriteria' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `kriteria`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kriteria`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kriteria`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kriteria`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\KriteriaPenilaian.php(13): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\KriteriaPenilaian->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KriteriaPenilaian))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-14 15:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-14 15:35:01 --> mysqli_sql_exception: Table 'spkmoora.sub_kriteria' doesn't exist in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `sub_kri...', 0)
+#1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sub_kri...')
+#2 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sub_kri...')
+#3 C:\laragon\www\SPK_MOORA\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `sub_kri...', Array, false)
+#4 C:\laragon\www\SPK_MOORA\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SPK_MOORA\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\SPK_MOORA\app\Controllers\SubKriteria.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(941): App\Controllers\SubKriteria->index()
+#8 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubKriteria))
+#9 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\SPK_MOORA\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\SPK_MOORA\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-06-14 15:35:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.sub_kriteria' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `sub_kriteria`.*, `kriteria`.`nama_kriteria`
+FROM `sub_kriteria`
+JOIN `kriteria` ON `kriteria`.`id` = `sub_kriteria`.`kriteria_id`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\SubKriteria.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\SubKriteria->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubKriteria))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+CRITICAL - 2024-06-14 15:35:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.sub_kriteria' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sub_kriteria`.*, `kriteria`.`nama_kriteria`
+FROM `sub_kriteria`
+JOIN `kriteria` ON `kriteria`.`id` = `sub_kriteria`.`kriteria_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sub_kriteria`.*, `kriteria`.`nama_kriteria`
+FROM `sub_kriteria`
+JOIN `kriteria` ON `kriteria`.`id` = `sub_kriteria`.`kriteria_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `sub_kriteria`.*, `kriteria`.`nama_kriteria`
+FROM `sub_kriteria`
+JOIN `kriteria` ON `kriteria`.`id` = `sub_kriteria`.`kriteria_id`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\SubKriteria.php(17): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\SubKriteria->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubKriteria))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+CRITICAL - 2024-06-14 15:35:01 --> [Caused by] mysqli_sql_exception: Table 'spkmoora.sub_kriteria' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `sub_kriteria`.*, `kriteria`.`nama_kriteria`
+FROM `sub_kriteria`
+JOIN `kriteria` ON `kriteria`.`id` = `sub_kriteria`.`kriteria_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sub_kriteria`.*, `kriteria`.`nama_kriteria`
+FROM `sub_kriteria`
+JOIN `kriteria` ON `kriteria`.`id` = `sub_kriteria`.`kriteria_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sub_kriteria`.*, `kriteria`.`nama_kriteria`
+FROM `sub_kriteria`
+JOIN `kriteria` ON `kriteria`.`id` = `sub_kriteria`.`kriteria_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `sub_kriteria`.*, `kriteria`.`nama_kriteria`
+FROM `sub_kriteria`
+JOIN `kriteria` ON `kriteria`.`id` = `sub_kriteria`.`kriteria_id`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SubKriteria.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\SubKriteria->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubKriteria))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-14 15:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-14 15:35:06 --> mysqli_sql_exception: Table 'spkmoora.penilaian_karyawan' doesn't exist in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `penilai...', 0)
+#1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penilai...')
+#2 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penilai...')
+#3 C:\laragon\www\SPK_MOORA\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilai...', Array, false)
+#4 C:\laragon\www\SPK_MOORA\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SPK_MOORA\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\SPK_MOORA\app\Controllers\PenilaianKaryawan.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+#8 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+#9 C:\laragon\www\SPK_MOORA\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\SPK_MOORA\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\SPK_MOORA\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-06-14 15:35:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.penilaian_karyawan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PenilaianKaryawan.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+CRITICAL - 2024-06-14 15:35:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'spkmoora.penilaian_karyawan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PenilaianKaryawan.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+CRITICAL - 2024-06-14 15:35:06 --> [Caused by] mysqli_sql_exception: Table 'spkmoora.penilaian_karyawan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `penilaian_karyawan`.*, `karyawan`.`name`
+FROM `penilaian_karyawan`
+JOIN `karyawan` ON `karyawan`.`id` = `penilaian_karyawan`.`karyawan_id`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PenilaianKaryawan.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-14 15:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-14 15:36:52 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK_MOORA\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK_MOORA\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK_MOORA\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK_MOORA\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK_MOORA\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK_MOORA\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK_MOORA\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK_MOORA\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-14 15:37:10 --> ErrorException: Undefined variable $DBDriver in C:\laragon\www\SPK_MOORA\system\Commands\Generators\Views\migration.tpl.php:16
+Stack trace:
+#0 C:\laragon\www\SPK_MOORA\system\Commands\Generators\Views\migration.tpl.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 16)
+#1 C:\laragon\www\SPK_MOORA\system\View\View.php(228): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\SPK_MOORA\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\SPK_MOORA\system\Common.php(1178): CodeIgniter\View\View->render('CodeIgniter\\Com...', Array, true)
+#4 C:\laragon\www\SPK_MOORA\system\CLI\GeneratorTrait.php(271): view('CodeIgniter\\Com...', Array, Array)
+#5 C:\laragon\www\SPK_MOORA\system\CLI\GeneratorTrait.php(293): CodeIgniter\Commands\Generators\SessionMigrationGenerator->renderTemplate(Array)
+#6 C:\laragon\www\SPK_MOORA\system\Commands\Generators\SessionMigrationGenerator.php(103): CodeIgniter\Commands\Generators\SessionMigrationGenerator->parseTemplate('App\\Database\\Mi...', Array, Array, Array)
+#7 C:\laragon\www\SPK_MOORA\system\CLI\GeneratorTrait.php(303): CodeIgniter\Commands\Generators\SessionMigrationGenerator->prepare('App\\Database\\Mi...')
+#8 C:\laragon\www\SPK_MOORA\system\CLI\GeneratorTrait.php(116): CodeIgniter\Commands\Generators\SessionMigrationGenerator->buildContent('App\\Database\\Mi...')
+#9 C:\laragon\www\SPK_MOORA\system\CLI\GeneratorTrait.php(95): CodeIgniter\Commands\Generators\SessionMigrationGenerator->generateClass(Array)
+#10 C:\laragon\www\SPK_MOORA\system\Commands\Generators\SessionMigrationGenerator.php(86): CodeIgniter\Commands\Generators\SessionMigrationGenerator->execute(Array)
+#11 C:\laragon\www\SPK_MOORA\system\CLI\Commands.php(65): CodeIgniter\Commands\Generators\SessionMigrationGenerator->run(Array)
+#12 C:\laragon\www\SPK_MOORA\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('session:migrati...', Array)
+#13 C:\laragon\www\SPK_MOORA\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+CRITICAL - 2024-06-14 15:37:10 --> ErrorException: Undefined variable $DBDriver
+in SYSTEMPATH\Commands\Generators\Views\migration.tpl.php on line 16.
+ 1 SYSTEMPATH\Commands\Generators\Views\migration.tpl.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DBDriver', 'C:\\laragon\\www\\SPK_MOORA\\system\\Commands\\Generators\\Views\\migration.tpl.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\system\\Commands\\Generators\\Views\\migration.tpl.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('CodeIgniter\\Commands\\Generators\\Views\\migration.tpl.php', [...], true)
+ 5 SYSTEMPATH\CLI\GeneratorTrait.php(275): view('CodeIgniter\\Commands\\Generators\\Views\\migration.tpl.php', [...], [...])
+ 6 SYSTEMPATH\CLI\GeneratorTrait.php(293): CodeIgniter\Commands\Generators\SessionMigrationGenerator->renderTemplate([...])
+ 7 SYSTEMPATH\Commands\Generators\SessionMigrationGenerator.php(103): CodeIgniter\Commands\Generators\SessionMigrationGenerator->parseTemplate('App\\Database\\Migrations\\CreateCiSessionsTable', [...], [...], [...])
+ 8 SYSTEMPATH\CLI\GeneratorTrait.php(303): CodeIgniter\Commands\Generators\SessionMigrationGenerator->prepare('App\\Database\\Migrations\\CreateCiSessionsTable')
+ 9 SYSTEMPATH\CLI\GeneratorTrait.php(116): CodeIgniter\Commands\Generators\SessionMigrationGenerator->buildContent('App\\Database\\Migrations\\CreateCiSessionsTable')
+10 SYSTEMPATH\CLI\GeneratorTrait.php(95): CodeIgniter\Commands\Generators\SessionMigrationGenerator->generateClass([...])
+11 SYSTEMPATH\Commands\Generators\SessionMigrationGenerator.php(86): CodeIgniter\Commands\Generators\SessionMigrationGenerator->execute([...])
+12 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Generators\SessionMigrationGenerator->run([...])
+13 SYSTEMPATH\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('session:migration', [])
+14 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2024-06-14 15:37:22 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK_MOORA\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK_MOORA\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK_MOORA\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK_MOORA\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK_MOORA\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK_MOORA\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK_MOORA\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK_MOORA\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-14 15:37:58 --> mysqli_sql_exception: Table 'users' already exists in C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\SPK_MOORA\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\SPK_MOORA\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\SPK_MOORA\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\SPK_MOORA\app\Database\Migrations\2024-01-31-165040_Users.php(36): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\SPK_MOORA\system\Database\MigrationRunner.php(865): App\Database\Migrations\Users->up()
+#6 C:\laragon\www\SPK_MOORA\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\SPK_MOORA\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\SPK_MOORA\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\SPK_MOORA\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\SPK_MOORA\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2024-06-14 15:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 15:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-14 15:59:19 --> ErrorException: Undefined variable $row
+in APPPATH\Views\penilaian_karyawan.php on line 110.
+ 1 APPPATH\Views\penilaian_karyawan.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\penilaian_karyawan.php', 110)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\penilaian_karyawan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penilaian_karyawan', [], true)
+ 5 APPPATH\Controllers\PenilaianKaryawan.php(35): view('penilaian_karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\PenilaianKaryawan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianKaryawan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-06-14 16:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

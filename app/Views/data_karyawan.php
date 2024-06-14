@@ -76,7 +76,7 @@
                   <form action="<?= base_url('data_karyawan/store') ?>" method="post">
                      <div class="form-row">
                         <div class="form-group col-md-6">
-                           <label for="name">Nama</label>
+                           <label for="name">Nama Lengkap</label>
                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="form-group col-md-6">
@@ -127,7 +127,7 @@
                <form action="<?= base_url('update_karyawan/' . $row['id']) ?>" method="post">
                   <div class="form-row">
                      <div class="form-group col-md-6">
-                        <label for="name">Nama</label>
+                        <label for="name">Nama Lengkap</label>
                         <input type="text" class="form-control" id="name" name="name" value="<?= $row['name'] ?>" required>
                      </div>
                      <div class="form-group col-md-6">

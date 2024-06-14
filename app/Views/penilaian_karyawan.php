@@ -45,6 +45,34 @@
             </div>
         </div>
 
+        <div class="col-md-12">
+            <div class="white_shd full margin_bottom_30">
+                <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
+                    <div class="heading1 margin_0">
+                        <h2 class="text-white">Tabel Konversi Penilaian</h2>
+                    </div>
+                </div>
+
+                <div class="table_section padding_infor_info">
+                    <div class="table-responsive-sm">
+                        <table id="myTable" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nama Karyawan</th>
+                                    <th>Sikap & Etika Kerja (K1)</th>
+                                    <th>Absensi (K2)</th>
+                                    <th>Target Pekerjaan (K3)</th>
+                                    <th>Inisiatif Pekerjaan (K4)</th>
+                                    <th>Lama Kerja (K5)</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- create -->
         <div class="modal fade" id="formTambahData" tabindex="-1" role="dialog" aria-labelledby="modalTambahTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -68,21 +96,39 @@
                                         <?php endforeach; ?>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <?php foreach ($kriteria as $k) : ?>
-                                    <div class="form-group col-md-6">
-                                        <label for="<?= 'kriteria_' . $k['id'] ?>"><?= $k['nama_kriteria'] ?> (<?= $k['kode_kriteria'] ?>)</label>
-                                        <select class="form-control" name="sub_kriteria[<?= $k['kode_kriteria'] ?>]" id="sub_kriteria_id_<?= $k['id'] ?>">
-                                            <option value="" disabled selected>Pilih Sub Kriteria</option>
-                                            <?php foreach ($sub_kriteria as $sk) : ?>
-                                                <?php if ($sk['kriteria_id'] == $k['id']) : ?>
-                                                    <option value="<?= $sk['nilai'] ?>"><?= $sk['keterangan'] ?></option>
-                                                <?php endif; ?>
-                                            <?php endforeach; ?>
-                                        </select>
+                                <div class="form-group col-md-6">
+                                    <label for="k1">Sikap & Etika Kerja (K1)</label>
+                                    <select class="form-control" name="k1" id="k1">
+                                        <option value="" disabled selected>Pilih Sub Kriteria</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="k2">Absensi (K2)</label>
+                                    <select class="form-control" name="karyawan_id" id="karyawan_id">
+                                        <option value="" disabled selected>Pilih Sub Kriteria</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="k3">Target Pekerjaan (K3)</label>
+                                    <select class="form-control" name="k1" id="k1">
+                                        <option value="" disabled selected>Pilih Sub Kriteria</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="k4">Inisiatif Pekerjaan (K4)</label>
+                                    <select class="form-control" name="karyawan_id" id="karyawan_id">
+                                        <option value="" disabled selected>Pilih Sub Kriteria</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="k5">Lama Kerja (K5)</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="no_hp" name="no_hp" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Tahun</span>
+                                        </div>
                                     </div>
-                                <?php endforeach; ?>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>
@@ -90,60 +136,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- edit -->
-        <?php foreach ($penilaian_karyawan as $a) : ?>
-            <div class="modal fade" id="editModal<?= $a['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="editModalTitle<?= $a['id'] ?>" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header dash_head">
-                            <h4 class="modal-title text-white font-weight-normal" id="editModalTitle<?= $a['id'] ?>">Edit Data Karyawan</h4>
-                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body modal-padding">
-                            <form action="<?= base_url('penilaian_karyawan/update/') ?>" method="post">
-                                <input type="hidden" name="id" value="<?= $a['id'] ?>">
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="edit_karyawan_id">Nama Karyawan</label>
-                                        <select class="form-control" name="edit_karyawan_id" id="edit_karyawan_id">
-                                            <option value="" disabled>Pilih Karyawan</option>
-                                            <?php foreach ($karyawan as $k) : ?>
-                                                <option value="<?= $k['id'] ?>" <?= $k['id'] == $a['karyawan_id'] ? 'selected' : '' ?>><?= $k['name'] ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <?php foreach ($kriteria as $k) : ?>
-                                        <div class="form-group col-md-6">
-                                            <label for="<?= 'edit_kriteria_' . $k['id'] ?>"><?= $k['nama_kriteria'] ?> (<?= $k['kode_kriteria'] ?>)</label>
-                                            <select class="form-control" name="edit_sub_kriteria[<?= $k['kode_kriteria'] ?>]" id="edit_sub_kriteria_<?= $k['id'] ?>">
-                                                <option value="" disabled>Pilih Sub Kriteria</option>
-                                                <?php foreach ($sub_kriteria as $sk) : ?>
-                                                    <?php if ($sk['kriteria_id'] == $k['id']) : ?>
-                                                        <?php
-                                                        $kolom_kriteria = strtolower($k['kode_kriteria']);
-                                                        $selected = ($sk['nilai'] == $a[$kolom_kriteria]) ? 'selected' : '';
-                                                        ?>
-                                                        <option value="<?= $sk['nilai'] ?>" <?= $selected ?>><?= $sk['keterangan'] ?></option>
-                                                    <?php endif; ?>
-                                                <?php endforeach; ?>
-                                            </select>
-                                        </div>
-                                    <?php endforeach; ?>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <?php endforeach; ?>
-
-
 
         <!-- delete -->
         <div id="confirm-dialog" class="modal" tabindex="-1" role="dialog">
