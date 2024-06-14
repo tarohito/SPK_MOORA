@@ -48,7 +48,7 @@
                               <td><?= ucwords($row['divisi']) ?></td>
                               <td>
                                  <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>">Edit</button>
+                                    <button type="button" class="btn btn-warning fa fa-pencil" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>"></button>
                                     <button href="#" data-href="<?= base_url('data_karyawan/' . $row['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
                                  </div>
                               </td>

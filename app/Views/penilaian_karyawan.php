@@ -49,7 +49,7 @@
                                         <td><?= $row['k5'] ?> Tahun</td>
                                         <td>
                                             <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>">Edit</button>
+                                                <button type="button" class="btn btn-warning fa fa-pencil" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>"></button>
                                                 <button href="#" data-href="<?= base_url('penilaian_karyawan/' . $row['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
                                             </div>
                                         </td>
@@ -78,11 +78,11 @@
                             <thead>
                                 <tr>
                                     <th>Nama Karyawan</th>
-                                    <th>Sikap & Etika Kerja (K1)</th>
-                                    <th>Absensi (K2)</th>
-                                    <th>Target Pekerjaan (K3)</th>
-                                    <th>Inisiatif Pekerjaan (K4)</th>
-                                    <th>Lama Kerja (K5)</th>
+                                    <th>(K1)</th>
+                                    <th>(K2)</th>
+                                    <th>(K3)</th>
+                                    <th>(K4)</th>
+                                    <th>(K5)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -231,7 +231,7 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
                             </form>
                         </div>
                     </div>
