@@ -21,7 +21,10 @@
                         <h2 class="text-white">List Penilaian Karyawan</h2>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-success" style="margin-right: 10px;" data-toggle="modal" data-target="#formTambahData"><i class="fa fa-plus"></i>&nbsp;Tambah Data</button>
+                        <button type="button" class="btn btn-success" style="margin-right: 10px;" data-toggle="modal" data-target="#formTambahData">
+                            <i class="fa fa-plus"></i>&nbsp;Tambah Data</button>
+                        <button type="button" class="btn btn-primary" style="margin-right: 10px;">
+                            <i class="fa fa-calculator"></i>&nbsp;Hitung Sekarang</button>
                     </div>
                 </div>
                 <div class="table_section padding_infor_info">
@@ -49,7 +52,7 @@
                                         <td><?= ucwords($row['k5']) ?> Tahun</td>
                                         <td>
                                             <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-warning fa fa-pencil" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>"></button>
+                                                <button type="button" class="btn btn-warning fa fa-pencil" style="margin-right: 5px;" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>"></button>
                                                 <button href="#" data-href="<?= base_url('penilaian_karyawan/' . $row['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
                                             </div>
                                         </td>
