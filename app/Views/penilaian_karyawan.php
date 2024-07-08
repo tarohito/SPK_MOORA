@@ -67,56 +67,6 @@
             </div>
         </div>
 
-        <!-- tabel konversi -->
-        <div class="col-md-12">
-            <div class="white_shd full margin_bottom_30">
-                <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
-                    <div class="heading1 margin_0">
-                        <h2 class="text-white">Tabel Konversi Penilaian</h2>
-                    </div>
-                </div>
-                <div class="table_section padding_infor_info">
-                    <div class="table-responsive-sm">
-                        <table id="myTable2" class="table">
-                            <thead>
-                                <tr>
-                                    <th>Nama Karyawan</th>
-                                    <th>(K1)</th>
-                                    <th>(K2)</th>
-                                    <th>(K3)</th>
-                                    <th>(K4)</th>
-                                    <th>(K5)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach ($penilaian_karyawan as $row) : ?>
-                                    <tr>
-                                        <td><?= ucwords($row['name']) ?></td>
-                                        <td><?= $row['k1'] ?></td>
-                                        <td><?= $row['k2'] ?></td>
-                                        <td><?= $row['k3'] ?></td>
-                                        <td><?= $row['k4'] ?></td>
-                                        <td>
-                                            <?php
-                                            $k5_value = $row['k5'];
-                                            if ($k5_value > 10) {
-                                                echo 5;
-                                            } elseif ($k5_value >= 6 && $k5_value <= 10) {
-                                                echo 3;
-                                            } else {
-                                                echo 1;
-                                            }
-                                            ?>
-                                        </td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- create -->
         <div class="modal fade" id="formTambahData" tabindex="-1" role="dialog" aria-labelledby="modalTambahTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">

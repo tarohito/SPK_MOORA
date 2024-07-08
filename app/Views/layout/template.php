@@ -89,8 +89,8 @@ $uri = service('uri');
                   <li class="<?= ($uri->getSegment(1) == "penilaian_karyawan") ? 'active' : '' ?>">
                      <a href="<?= base_url('penilaian_karyawan') ?>"><i class="fa fa-table blue1_color"></i> <span>Penilaian Karyawan</span></a>
                   </li>
-                  <li class="<?= ($uri->getSegment(1) == "settings") ? 'active' : '' ?>">
-                     <a href="<?= base_url('settings.html') ?>"><i class="fa fa-bar-chart-o green_color"></i> <span>Hasil Penilaian</span></a>
+                  <li class="<?= ($uri->getSegment(1) == "hasil") ? 'active' : '' ?>">
+                     <a href="<?= base_url('hasil') ?>"><i class="fa fa-bar-chart-o green_color"></i> <span>Hasil Penilaian</span></a>
                   </li>
                </ul>
             </div>
@@ -168,6 +168,11 @@ $uri = service('uri');
    </script>
    <script type="text/javascript">
       let table2 = new DataTable('#myTable2', {
+         responsive: true
+      });
+   </script>
+   <script type="text/javascript">
+      let table3 = new DataTable('#myTable3', {
          responsive: true
       });
    </script>

@@ -41,3 +41,5 @@ $routes->get('penilaian_karyawan', 'PenilaianKaryawan::index');
 $routes->post('penilaian_karyawan/store', 'PenilaianKaryawan::store');
 $routes->post('penilaian_karyawan/update', 'PenilaianKaryawan::update');
 $routes->match(['get', 'delete'], '/penilaian_karyawan/(:num)', 'PenilaianKaryawan::delete/$1');
+
+$routes->get('hasil', 'Hasil::index');

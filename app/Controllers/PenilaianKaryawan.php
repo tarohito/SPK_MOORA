@@ -30,7 +30,7 @@ class PenilaianKaryawan extends BaseController
             $alias = 'sk' . ($index + 1);
             $column = 'k' . ($index + 1);
             $builder = $builder->join("sub_kriteria as $alias", "$alias.nilai = penilaian_karyawan.$column AND $alias.kriteria_id = {$k['id']}", 'left')
-            ->select("$alias.keterangan as {$column}_ket");
+                ->select("$alias.keterangan as {$column}_ket");
         }
 
         $data['penilaian_karyawan'] = $builder->findAll();
@@ -77,8 +77,6 @@ class PenilaianKaryawan extends BaseController
             return redirect()->back()->withInput()->with('errors', $validation->getErrors());
         }
     }
-
-
 
     public function update()
     {
