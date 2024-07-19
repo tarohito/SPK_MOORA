@@ -30,7 +30,7 @@ $uri = service('uri');
    <!-- color css -->
    <link rel="stylesheet" href="<?= base_url('assets/css/color_2.css') ?>">
    <!-- select bootstrap -->
-   <link rel=" stylesheet" href="<?= base_url('assets/css/bootstrap-select.css') ?>">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
    <!-- scrollbar css -->
    <link rel="stylesheet" href="<?= base_url('assets/css/perfect-scrollbar.css') ?>">
    <!-- custom css -->
@@ -142,7 +142,7 @@ $uri = service('uri');
    <!-- wow animation -->
    <script src="assets/js/animate.js"></script>
    <!-- select country -->
-   <script src="assets/js/bootstrap-select.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
    <!-- owl carousel -->
    <!-- <script src="assets/js/owl.carousel.js"></script> -->
    <!-- chart js -->
@@ -154,6 +154,11 @@ $uri = service('uri');
    <!-- <script src="assets/js/perfect-scrollbar.min.js"></script> -->
 
 
+   <script>
+      $(function() {
+         $('.aw').selectpicker();
+      });
+   </script>
 
    <script>
       var ps = new PerfectScrollbar('#sidebar');

@@ -82,10 +82,9 @@
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="nama">Nama Karyawan</label>
-                                    <select class="form-control js-example-basic-single" name="karyawan_id" id="karyawan_id" required>
-                                        <option value="" disabled selected>Pilih Karyawan</option>
+                                    <select class="form-control aw" data-live-search="true" name="karyawan_id" id="karyawan_id" required>
                                         <?php foreach ($karyawan as $k) : ?>
-                                            <option value="<?= $k['id'] ?>"><?= $k['name'] ?></option>
+                                            <option data-tokens="<?= $k['id'] ?>"><?= $k['name'] ?></option>
                                         <?php endforeach; ?>
                                     </select>
                                 </div>
