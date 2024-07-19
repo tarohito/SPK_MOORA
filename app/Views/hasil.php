@@ -198,7 +198,7 @@
                                     <th>MAXIMUM</th>
                                     <th>MINIMUM</th>
                                     <th>Yi (MAX - MIN)</th>
-                                    <!-- <th>Ranking</th> -->
+                                    <th>Ranking</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -226,7 +226,6 @@
                                         <td><?= $nilai_k2 ?></td>
                                         <td><?= ($maximum - $nilai_k2) ?></td>
                                         <td><!-- Isi dengan nilai Ranking --></td>
-
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>

@@ -38,8 +38,8 @@
                 </div>
                 <div class="counter_no">
                     <div>
-                        <p class="total_no">123.50</p>
-                        <p class="head_couter">Average Time</p>
+                        <p class="total_no"><?= $totalKriteria ?></p>
+                        <p class="head_couter">Kriteria Penilaian</p>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\KaryawanModel;
+use App\Models\KriteriaModel;
 
 class Dashboard extends BaseController
 {
@@ -18,6 +19,12 @@ class Dashboard extends BaseController
 
         // Menampilkan view dengan data total karyawan
         return view('dashboard', ['totalKaryawan' => $totalKaryawan, 'uri' => $uri]);
+
+        $KriteriaModel = new KriteriaModel();
+
+        $totalKriteria = $KriteriaModel->countAll();
+
+        return view('dashboard', ['totalKriteria' => $totalKriteria, 'uri' => $uri]);
     }
 
     public function profil(): string

@@ -35,11 +35,6 @@ $uri = service('uri');
    <link rel="stylesheet" href="<?= base_url('assets/css/perfect-scrollbar.css') ?>">
    <!-- custom css -->
    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
-   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-   <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css"> -->
    <link href="assets/DataTables/datatables.min.css" rel="stylesheet">
    <style>
       ul.list-unstyled.components li.active {
@@ -173,6 +168,11 @@ $uri = service('uri');
    </script>
    <script type="text/javascript">
       let table3 = new DataTable('#myTable3', {
+         responsive: true
+      });
+   </script>
+   <script type="text/javascript">
+      let table4 = new DataTable('#myTable4', {
          responsive: true
       });
    </script>

@@ -43,4 +43,9 @@ class KriteriaModel extends Model
     {
         return $this->findAll();
     }
+
+    public function getTotalKriteria()
+    {
+        return $this->countAll();
+    }
 }
