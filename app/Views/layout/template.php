@@ -37,9 +37,6 @@ $uri = service('uri');
    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
    <link href="assets/DataTables/datatables.min.css" rel="stylesheet">
 
-
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-
    <style>
       ul.list-unstyled.components li.active {
          background-color: rgba(240, 240, 240);
@@ -156,7 +153,7 @@ $uri = service('uri');
    <!-- nice scrollbar -->
    <!-- <script src="assets/js/perfect-scrollbar.min.js"></script> -->
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
 
    <script>
       var ps = new PerfectScrollbar('#sidebar');
@@ -202,12 +199,6 @@ $uri = service('uri');
       }
    </script>
 
-   <script>
-      // In your Javascript (external .js resource or <script> tag)
-      $(document).ready(function() {
-         $('.js-example-basic-single').select2();
-      });
-   </script>
 
 </body>
 
