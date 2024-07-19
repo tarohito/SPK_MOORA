@@ -63,11 +63,6 @@
                 </div>
             </div>
         </div>
-        <?php echo $akar_k1 ?><br>
-        <?php echo $akar_k2 ?><br>
-        <?php echo $akar_k3 ?><br>
-        <?php echo $akar_k4 ?><br>
-        <?php echo $akar_k5 ?><br>
 
         <div class="col-md-12">
             <div class="white_shd full margin_bottom_30">

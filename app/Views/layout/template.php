@@ -36,6 +36,10 @@ $uri = service('uri');
    <!-- custom css -->
    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
    <link href="assets/DataTables/datatables.min.css" rel="stylesheet">
+
+
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
    <style>
       ul.list-unstyled.components li.active {
          background-color: rgba(240, 240, 240);
@@ -150,6 +154,9 @@ $uri = service('uri');
    <!-- <script src="assets/js/analyser.js"></script> -->
    <!-- nice scrollbar -->
    <!-- <script src="assets/js/perfect-scrollbar.min.js"></script> -->
+
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
    <script>
       var ps = new PerfectScrollbar('#sidebar');
    </script>
@@ -192,6 +199,13 @@ $uri = service('uri');
             scrollTop: $('#formTambahData').offset().top
          }, 1000); // Durasi animasi dalam milidetik (ms)
       }
+   </script>
+
+   <script>
+      // In your Javascript (external .js resource or <script> tag)
+      $(document).ready(function() {
+         $('.js-example-basic-single').select2();
+      });
    </script>
 
 </body>
