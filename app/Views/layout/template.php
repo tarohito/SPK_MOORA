@@ -38,7 +38,7 @@ $uri = service('uri');
    <link href="assets/DataTables/datatables.min.css" rel="stylesheet">
 
 
-   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 
    <style>
       ul.list-unstyled.components li.active {
@@ -136,6 +136,7 @@ $uri = service('uri');
 
    <!-- jQuery -->
    <script src="assets/js/jquery.min.js"></script>
+
    <script src="assets/DataTables/datatables.min.js"></script>
    <!-- <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script> -->
 
@@ -155,7 +156,7 @@ $uri = service('uri');
    <!-- nice scrollbar -->
    <!-- <script src="assets/js/perfect-scrollbar.min.js"></script> -->
 
-   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
    <script>
       var ps = new PerfectScrollbar('#sidebar');
