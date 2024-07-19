@@ -52,7 +52,7 @@
                                         <td><?= ucwords($row['k5']) ?> Tahun</td>
                                         <td>
                                             <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-warning fa fa-pencil" style="margin-right: 5px;" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>"></button>
+                                                <button type="button" class="btn btn-warning fa fa-pencil-square-o" style="margin-right: 5px;" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>"></button>
                                                 <button href="#" data-href="<?= base_url('penilaian_karyawan/' . $row['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
                                             </div>
                                         </td>

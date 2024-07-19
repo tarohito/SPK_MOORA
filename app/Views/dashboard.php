@@ -33,7 +33,7 @@
             <div class="full counter_section margin_bottom_30 yellow_bg">
                 <div class="couter_icon">
                     <div>
-                        <i class="fa fa-clock-o"></i>
+                        <i class="fa fa-pencil"></i>
                     </div>
                 </div>
                 <div class="counter_no">

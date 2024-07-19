@@ -28,9 +28,9 @@ $uri = service('uri');
    <!-- responsive css -->
    <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css') ?>">
    <!-- color css -->
-   <!-- <link rel="stylesheet" href="assets/css/color_2.css" /> -->
+   <link rel="stylesheet" href="<?= base_url('assets/css/color_2.css') ?>">
    <!-- select bootstrap -->
-   <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap-select.css') ?>">
+   <link rel=" stylesheet" href="<?= base_url('assets/css/bootstrap-select.css') ?>">
    <!-- scrollbar css -->
    <link rel="stylesheet" href="<?= base_url('assets/css/perfect-scrollbar.css') ?>">
    <!-- custom css -->
@@ -38,7 +38,7 @@ $uri = service('uri');
    <link href="assets/DataTables/datatables.min.css" rel="stylesheet">
    <style>
       ul.list-unstyled.components li.active {
-         background-color: rgba(0, 0, 0, 0.4);
+         background-color: rgba(240, 240, 240);
       }
    </style>
 </head>
@@ -57,7 +57,7 @@ $uri = service('uri');
                <div class="sidebar_user_info">
                   <div class="icon_setting"></div>
                   <div class="user_profle_side">
-                     <div class="user_img"><img class="img-responsive" src="<?= base_url('assets/images/layout_img/user_img.jpg') ?>">
+                     <div class="user_img"><img class="img-responsive" src="<?= base_url('assets/images/logo/logo_icon.png') ?>">
                      </div>
                      <div class="user_info">
                         <h6>Administrator</h6>
@@ -98,9 +98,9 @@ $uri = service('uri');
                <nav class="navbar navbar-expand-lg navbar-light">
                   <div class="full">
                      <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
-                     <div class="logo_section">
+                     <!-- <div class="logo_section">
                         <a href="/"><img class="img-responsive" src="<?= base_url('assets/images/logo/logo.png') ?>"></a>
-                     </div>
+                     </div> -->
                      <div class=" right_topbar">
                         <div class="icon_info">
                            <ul class="user_profile_dd">
