@@ -17,14 +17,18 @@ class Dashboard extends BaseController
         // Hitung jumlah data karyawan
         $totalKaryawan = $karyawanModel->countAll(); // Menghitung total karyawan
 
-        // Menampilkan view dengan data total karyawan
-        return view('dashboard', ['totalKaryawan' => $totalKaryawan, 'uri' => $uri]);
+        // Instance model KriteriaModel
+        $kriteriaModel = new KriteriaModel();
 
-        $KriteriaModel = new KriteriaModel();
+        // Hitung jumlah data kriteria
+        $totalKriteria = $kriteriaModel->countAll(); // Menghitung total kriteria
 
-        $totalKriteria = $KriteriaModel->countAll();
-
-        return view('dashboard', ['totalKriteria' => $totalKriteria, 'uri' => $uri]);
+        // Menampilkan view dengan data total karyawan dan total kriteria
+        return view('dashboard', [
+            'totalKaryawan' => $totalKaryawan,
+            'totalKriteria' => $totalKriteria,
+            'uri' => $uri
+        ]);
     }
 
     public function profil(): string
