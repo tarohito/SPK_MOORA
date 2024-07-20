@@ -44,7 +44,7 @@ $uri = service('uri');
    </style>
 </head>
 
-<body class="dashboard dashboard_1">
+<body class="dashboard dashboard_2">
    <div class="full_container">
       <div class="inner_container">
          <!-- Sidebar  -->
@@ -80,10 +80,10 @@ $uri = service('uri');
                      <a href="<?= base_url('kriteria_penilaian') ?>"><i class="fa fa-pencil yellow_color"></i> <span>Kriteria Penilaian</span></a>
                   </li>
                   <li class="<?= ($uri->getSegment(1) == "sub_kriteria") ? 'active' : '' ?>">
-                     <a href="<?= base_url('sub_kriteria') ?>"><i class="fa fa-paper-plane red_color"></i> <span>Sub Kriteria</span></a>
+                     <a href="<?= base_url('sub_kriteria') ?>"><i class="fa fa-th-list red_color"></i> <span>Sub Kriteria</span></a>
                   </li>
                   <li class="<?= ($uri->getSegment(1) == "penilaian_karyawan") ? 'active' : '' ?>">
-                     <a href="<?= base_url('penilaian_karyawan') ?>"><i class="fa fa-table blue1_color"></i> <span>Penilaian Karyawan</span></a>
+                     <a href="<?= base_url('penilaian_karyawan') ?>"><i class="fa  fa-calculator blue1_color"></i> <span>Penilaian Karyawan</span></a>
                   </li>
                   <li class="<?= ($uri->getSegment(1) == "hasil") ? 'active' : '' ?>">
                      <a href="<?= base_url('hasil') ?>"><i class="fa fa-bar-chart-o green_color"></i> <span>Hasil Penilaian</span></a>

@@ -42,8 +42,11 @@
                                         <td><?= ucwords($row['jenis']); ?></td>
                                         <td>
                                             <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-warning fa fa-pencil-square-o" style="margin-right: 5px;" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>"></button>
-                                                <button href="#" data-href="<?= base_url('kriteria_penilaian/' . $row['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash"></button>
+                                                <button type="button" class="btn btn-warning fa fa-pencil-square-o" style="margin-right: 5px;" data-toggle="modal" data-target="#editModal<?= $row['id'] ?>" title="Edit">
+                                                </button>
+
+                                                <button type="button" href="#" data-href="<?= base_url('kriteria_penilaian/' . $row['id']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-danger fa fa-trash" title="Hapus">
+                                                </button>
                                             </div>
                                         </td>
                                     </tr>
