@@ -82,13 +82,15 @@
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="nama">Nama Karyawan</label>
+
                                     <select class="form-control aw" data-live-search="true" name="karyawan_id" id="karyawan_id" required>
+                                        <option value="" disabled selected>Pilih Karyawan</option>
                                         <?php foreach ($karyawan as $k) : ?>
-                                            <option data-tokens="<?= $k['id'] ?>"><?= $k['name'] ?></option>
+                                            <option value="<?= $k['id'] ?>"><?= $k['name'] ?></option>
                                         <?php endforeach; ?>
                                     </select>
-                                </div>
 
+                                </div>
 
                                 <?php foreach ($kriteria as $k) : ?>
                                     <?php if ($k['kode_kriteria'] != 'K5') : ?>
