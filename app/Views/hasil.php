@@ -217,25 +217,41 @@
                                         $nilai_k5 = (1 / $akar_k5) * $bobot_K5;
                                     }
                                     $maximum = ($nilai_k1 + $nilai_k3 + $nilai_k4 + $nilai_k5);
+                                    $minimum = $nilai_k2;
+                                    $yi = $maximum - $minimum;
 
                                     // Simpan nilai maksimum ke dalam array
-                                    $max_values[$row['name']] = $maximum;
+                                    $max_values[] = [
+                                        'nama' => ucwords($row['name']),
+                                        'maximum' => $maximum,
+                                        'minimum' => $minimum,
+                                        'yi' => $yi,
+                                    ];
+                                endforeach;
+
+                                // Urutkan array berdasarkan nilai Yi (descending)
+                                usort($max_values, function ($a, $b) {
+                                    return $b['yi'] <=> $a['yi'];
+                                });
+
+                                // Hitung ranking
+                                $ranking = 1;
+                                foreach ($max_values as $data) {
                                 ?>
                                     <tr>
-                                        <td><?= ucwords($row['name']) ?></td>
-                                        <td><?= $maximum ?></td>
-                                        <td><?= $nilai_k2 ?></td>
-                                        <td><?= ($maximum - $nilai_k2) ?></td>
-                                        <td><!-- Isi dengan nilai Ranking --></td>
+                                        <td><?= $data['nama'] ?></td>
+                                        <td><?= $data['maximum'] ?></td>
+                                        <td><?= $data['minimum'] ?></td>
+                                        <td><?= $data['yi'] ?></td>
+                                        <td><?= $ranking ?></td>
                                     </tr>
-                                <?php endforeach;
+                                <?php
+                                    $ranking++;
+                                }
 
-                                // Sorting array untuk mendapatkan nilai maksimum terbesar
-                                arsort($max_values);
-
-                                // Ambil nama karyawan dengan nilai maksimum tertinggi
-                                $best_employee = key($max_values);
-                                $best_score = reset($max_values);
+                                // Ambil data karyawan terbaik (yang pertama setelah diurutkan)
+                                $best_employee = $max_values[0]['nama'];
+                                $best_score = $max_values[0]['maximum'];
                                 ?>
                             </tbody>
                         </table>
@@ -244,18 +260,22 @@
 
                 <div class="padding_infor_info">
                     <div class="alert alert-info" role="alert">
-                        Karyawan terbaik: <strong><?= $best_employee ?></strong> dengan nilai maksimum: <strong><?= $best_score ?></strong>
+                        Karyawan terbaik : <strong><?= $best_employee ?></strong> dengan nilai skor : <strong><?= $max_values[0]['yi'] ?></strong>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- footer -->
-        <div class="container-fluid">
-            <div class="footer">
-                <p>Copyright © 2024 Designed and built with all the love by the Taro & Friend.</p>
             </div>
         </div>
 
 
-        <?= $this->endSection() ?>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="footer">
+            <p>Copyright © 2024 Designed and built with all the love by the Taro & Friend.</p>
+        </div>
+    </div>
+
+
+    <?= $this->endSection() ?>

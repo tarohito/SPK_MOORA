@@ -218,3 +218,129 @@ INFO - 2024-07-20 19:58:44 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-07-20 19:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-07-20 20:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-07-20 20:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-20 20:16:49 --> ErrorException: Undefined variable $max_values
+in APPPATH\Views\hasil.php on line 246.
+ 1 APPPATH\Views\hasil.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $max_values', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php', 246)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('hasil', [], true)
+ 5 APPPATH\Controllers\Hasil.php(62): view('hasil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Hasil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-07-20 20:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-20 20:21:21 --> ErrorException: Undefined variable $best_employee
+in APPPATH\Views\hasil.php on line 261.
+ 1 APPPATH\Views\hasil.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $best_employee', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php', 261)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('hasil', [], true)
+ 5 APPPATH\Controllers\Hasil.php(62): view('hasil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Hasil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-07-20 20:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-20 20:43:02 --> ErrorException: Undefined array key "A3"
+in APPPATH\Views\hasil.php on line 245.
+ 1 APPPATH\Views\hasil.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "A3"', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php', 245)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('hasil', [], true)
+ 5 APPPATH\Controllers\Hasil.php(62): view('hasil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Hasil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-07-20 20:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-20 20:54:56 --> ErrorException: Undefined variable $best_employee
+in APPPATH\Views\hasil.php on line 240.
+ 1 APPPATH\Views\hasil.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $best_employee', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php', 240)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('hasil', [], true)
+ 5 APPPATH\Controllers\Hasil.php(62): view('hasil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Hasil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-07-20 20:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-20 20:55:02 --> ErrorException: Undefined variable $best_employee
+in APPPATH\Views\hasil.php on line 240.
+ 1 APPPATH\Views\hasil.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $best_employee', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php', 240)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('hasil', [], true)
+ 5 APPPATH\Controllers\Hasil.php(62): view('hasil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Hasil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-07-20 20:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-20 20:56:08 --> ErrorException: Undefined variable $max_values
+in APPPATH\Views\hasil.php on line 250.
+ 1 APPPATH\Views\hasil.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $max_values', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php', 250)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('hasil', [], true)
+ 5 APPPATH\Controllers\Hasil.php(62): view('hasil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Hasil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-07-20 20:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 20:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-20 20:58:08 --> ErrorException: Undefined variable $best_employee
+in APPPATH\Views\hasil.php on line 237.
+ 1 APPPATH\Views\hasil.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $best_employee', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('hasil', [], true)
+ 5 APPPATH\Controllers\Hasil.php(62): view('hasil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Hasil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-07-20 20:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-20 21:01:58 --> ErrorException: Undefined variable $best_employee
+in APPPATH\Views\hasil.php on line 266.
+ 1 APPPATH\Views\hasil.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $best_employee', 'C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php', 266)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\SPK_MOORA\\app\\Views\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('hasil', [], true)
+ 5 APPPATH\Controllers\Hasil.php(62): view('hasil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Hasil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hasil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\SPK_MOORA\\public\\index.php')
+INFO - 2024-07-20 21:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-20 21:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
