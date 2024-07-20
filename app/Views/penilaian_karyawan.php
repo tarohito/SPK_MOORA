@@ -23,8 +23,6 @@
                     <div>
                         <button type="button" class="btn btn-success" style="margin-right: 10px;" data-toggle="modal" data-target="#formTambahData">
                             <i class="fa fa-plus"></i>&nbsp;Tambah Data</button>
-                        <button type="button" class="btn btn-primary" style="margin-right: 10px;">
-                            <i class="fa fa-calculator"></i>&nbsp;Hitung Sekarang</button>
                     </div>
                 </div>
                 <div class="table_section padding_infor_info">
