@@ -272,7 +272,7 @@
                         Karyawan terbaik : <strong><?= $best_employee ?></strong> dengan nilai skor : <strong><?= number_format($best_score, 9) ?></strong>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
