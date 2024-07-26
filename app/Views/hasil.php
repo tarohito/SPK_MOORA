@@ -244,9 +244,9 @@
                                 ?>
                                     <tr>
                                         <td><?= $data['nama'] ?></td>
-                                        <td><?= number_format($data['maximum'], 2) ?></td>
-                                        <td><?= number_format($data['minimum'], 2) ?></td>
-                                        <td><?= number_format($data['yi'], 2) ?></td>
+                                        <td><?= number_format($data['maximum'], 9) ?></td>
+                                        <td><?= number_format($data['minimum'], 9) ?></td>
+                                        <td><?= number_format($data['yi'], 9) ?></td>
                                         <td><?= $ranking ?></td>
                                     </tr>
                                 <?php
@@ -269,7 +269,7 @@
 
                 <div class="padding_infor_info">
                     <div class="alert alert-info" role="alert">
-                        Karyawan terbaik : <strong><?= $best_employee ?></strong> dengan nilai skor : <strong><?= number_format($best_score, 2) ?></strong>
+                        Karyawan terbaik : <strong><?= $best_employee ?></strong> dengan nilai skor : <strong><?= number_format($best_score, 9) ?></strong>
                     </div>
                 </div>
                 
