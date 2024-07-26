@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <!-- <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3">
             <div class="full counter_section margin_bottom_30 red_bg">
                 <div class="couter_icon">
                     <div>
@@ -59,9 +59,9 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-6 col-lg-3">
             <div class="full counter_section margin_bottom_30 blue1_bg">
                 <div class="couter_icon">
                     <div>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="counter_no">
                     <div>
-                        <p class="total_no">1,805</p>
+                        <p class="total_no"><?= $totalPenilaian ?></p>
                         <p class="head_couter">Data Penilaian</p>
                     </div>
                 </div>
@@ -80,7 +80,5 @@
     </div>
 
 </div>
-
-
 
 <?= $this->endSection(); ?>

@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\KaryawanModel;
 use App\Models\KriteriaModel;
+use App\Models\PenilaianKaryawanM;
 
 class Dashboard extends BaseController
 {
@@ -23,10 +24,18 @@ class Dashboard extends BaseController
         // Hitung jumlah data kriteria
         $totalKriteria = $kriteriaModel->countAll(); // Menghitung total kriteria
 
+        // Instance model KriteriaModel
+        $PenilaianKaryawanM = new PenilaianKaryawanM();
+
+        // Hitung jumlah data kriteria
+        $totalPenilaian = $PenilaianKaryawanM->countAll(); // Menghitung total kriteria
+
+
         // Menampilkan view dengan data total karyawan dan total kriteria
         return view('dashboard', [
             'totalKaryawan' => $totalKaryawan,
             'totalKriteria' => $totalKriteria,
+            'totalPenilaian' => $totalPenilaian,
             'uri' => $uri
         ]);
     }
