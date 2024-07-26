@@ -83,7 +83,10 @@
                     </div>
                     <div class="form-group">
                         <label for="bobot">Bobot</label>
-                        <input type="float" class="form-control" id="bobot" name="bobot" required>
+                        <input type="number" step="0.01" class="form-control" id="bobot" name="bobot" required>
+                        <small id="bobotHelp" class="form-text text-muted">
+                            Masukkan bobot dalam format angka desimal. Contoh: 0.5, 1.75 (Gunakan tanda titik atau koma)
+                        </small>
                     </div>
                     <div class="form-group">
                         <label for="jenis">Jenis</label>
@@ -124,7 +127,10 @@
                         </div>
                         <div class="form-group">
                             <label for="bobot">Bobot</label>
-                            <input type="float" class="form-control" id="bobot" name="bobot" required value="<?= $row['bobot'] ?>">
+                            <input type="number" step="0.01" class="form-control" id="bobot" name="bobot" required value="<?= htmlspecialchars($row['bobot']) ?>">
+                            <small id="bobotHelp" class="form-text text-muted">
+                                Masukkan bobot dalam format angka desimal. Contoh: 0.5, 1.75 (Gunakan tanda titik atau koma)
+                            </small>
                         </div>
                         <div class="form-group">
                             <label for="jenis">Jenis</label>

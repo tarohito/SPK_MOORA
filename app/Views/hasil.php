@@ -19,7 +19,7 @@
             <div class="white_shd full margin_bottom_30">
                 <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
                     <div class="heading1 margin_0">
-                        <h2 class="text-white">Tabel Konversi Penilaian</h2>
+                        <h2 class="text-white">Konversi Penilaian</h2>
                     </div>
                 </div>
                 <div class="table_section padding_infor_info">
@@ -68,7 +68,7 @@
             <div class="white_shd full margin_bottom_30">
                 <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
                     <div class="heading1 margin_0">
-                        <h2 class="text-white">Tabel Matrik Normalisasi</h2>
+                        <h2 class="text-white">Matriks Normalisasi</h2>
                     </div>
                 </div>
                 <div class="table_section padding_infor_info">
@@ -120,7 +120,7 @@
             <div class="white_shd full margin_bottom_30">
                 <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
                     <div class="heading1 margin_0">
-                        <h2 class="text-white">Tabel Nilai Optimum Atribut</h2>
+                        <h2 class="text-white">Nilai Optimum Atribut</h2>
                     </div>
                 </div>
                 <div class="table_section padding_infor_info">
@@ -181,7 +181,7 @@
             <div class="white_shd full margin_bottom_30">
                 <div class="full graph_head dash_head d-flex justify-content-between align-items-center">
                     <div class="heading1 margin_0">
-                        <h2 class="text-white">Tabel Perankingan</h2>
+                        <h2 class="text-white">Perankingan</h2>
                     </div>
                 </div>
                 <div class="table_section padding_infor_info">
@@ -201,6 +201,7 @@
                                 // Inisialisasi array untuk menyimpan nilai maksimum
                                 $max_values = [];
 
+                                // Loop melalui setiap penilaian karyawan
                                 foreach ($penilaian_karyawan as $row) :
                                     // Hitung nilai untuk setiap kolom
                                     $nilai_k1 = ($row['k1'] / $akar_k1) * $bobot_K1;
@@ -208,6 +209,7 @@
                                     $nilai_k3 = ($row['k3'] / $akar_k3) * $bobot_K3;
                                     $nilai_k4 = ($row['k4'] / $akar_k4) * $bobot_K4;
 
+                                    // Hitung nilai k5 berdasarkan kondisi yang diberikan
                                     $k5_value = $row['k5'];
                                     if ($k5_value > 10) {
                                         $nilai_k5 = (5 / $akar_k5) * $bobot_K5;
@@ -216,6 +218,8 @@
                                     } else {
                                         $nilai_k5 = (1 / $akar_k5) * $bobot_K5;
                                     }
+
+                                    // Hitung nilai maksimum dan minimum
                                     $maximum = ($nilai_k1 + $nilai_k3 + $nilai_k4 + $nilai_k5);
                                     $minimum = $nilai_k2;
                                     $yi = $maximum - $minimum;
@@ -234,15 +238,15 @@
                                     return $b['yi'] <=> $a['yi'];
                                 });
 
-                                // Hitung ranking
+                                // Hitung ranking dan tampilkan data
                                 $ranking = 1;
                                 foreach ($max_values as $data) {
                                 ?>
                                     <tr>
                                         <td><?= $data['nama'] ?></td>
-                                        <td><?= $data['maximum'] ?></td>
-                                        <td><?= $data['minimum'] ?></td>
-                                        <td><?= $data['yi'] ?></td>
+                                        <td><?= number_format($data['maximum'], 2) ?></td>
+                                        <td><?= number_format($data['minimum'], 2) ?></td>
+                                        <td><?= number_format($data['yi'], 2) ?></td>
                                         <td><?= $ranking ?></td>
                                     </tr>
                                 <?php
@@ -250,8 +254,13 @@
                                 }
 
                                 // Ambil data karyawan terbaik (yang pertama setelah diurutkan)
-                                $best_employee = $max_values[0]['nama'];
-                                $best_score = $max_values[0]['maximum'];
+                                if (!empty($max_values)) {
+                                    $best_employee = $max_values[0]['nama'];
+                                    $best_score = $max_values[0]['yi'];
+                                } else {
+                                    $best_employee = 'Tidak ada data';
+                                    $best_score = 0;
+                                }
                                 ?>
                             </tbody>
                         </table>
@@ -260,10 +269,10 @@
 
                 <div class="padding_infor_info">
                     <div class="alert alert-info" role="alert">
-                        Karyawan terbaik : <strong><?= $best_employee ?></strong> dengan nilai skor : <strong><?= $max_values[0]['yi'] ?></strong>
+                        Karyawan terbaik : <strong><?= $best_employee ?></strong> dengan nilai skor : <strong><?= number_format($best_score, 2) ?></strong>
                     </div>
                 </div>
-
+                
             </div>
         </div>
 

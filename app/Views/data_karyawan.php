@@ -101,8 +101,7 @@
                      <div class="form-row">
                         <div class="form-group col-md-12">
                            <label for="alamat">Alamat</label>
-                           <textarea class="form-control" id="alamat" name="alamat" required>
-                           </textarea>
+                           <textarea type="text" class="form-control" id="alamat" name="alamat" required></textarea>
                         </div>
                      </div>
                      <button type="submit" class="btn btn-primary">Simpan</button>

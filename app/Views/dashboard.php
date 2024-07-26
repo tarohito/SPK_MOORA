@@ -39,7 +39,7 @@
                 <div class="counter_no">
                     <div>
                         <p class="total_no"><?= $totalKriteria ?></p>
-                        <p class="head_couter">Kriteria Penilaian</p>
+                        <p class="head_couter">Data Kriteria Penilaian</p>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="counter_no">
                     <div>
                         <p class="total_no">1,805</p>
-                        <p class="head_couter">Penilaian</p>
+                        <p class="head_couter">Data Penilaian</p>
                     </div>
                 </div>
             </div>
