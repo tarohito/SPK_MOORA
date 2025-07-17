@@ -1,4 +1,4 @@
-#SPK_MOORA
+# SPK_MOORA
 
 **Sistem Pendukung Keputusan menggunakan metode MOORA (Multi‑Objective Optimization on the basis of Ratio Analysis)**
 

@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\KaryawanModel;
 use App\Models\KriteriaModel;
 use App\Models\PenilaianKaryawanM;
+use App\Models\SubKriteriaM; // ⬅️ Tambahkan ini
 
 class Dashboard extends BaseController
 {
@@ -12,31 +13,24 @@ class Dashboard extends BaseController
     {
         $uri = service('uri');
 
-        // Instance model KaryawanModel
+        // Instance model
         $karyawanModel = new KaryawanModel();
-
-        // Hitung jumlah data karyawan
-        $totalKaryawan = $karyawanModel->countAll(); // Menghitung total karyawan
-
-        // Instance model KriteriaModel
         $kriteriaModel = new KriteriaModel();
+        $penilaianModel = new PenilaianKaryawanM();
+        $subKriteriaModel = new SubKriteriaM(); // ⬅️ Tambahkan ini
 
-        // Hitung jumlah data kriteria
-        $totalKriteria = $kriteriaModel->countAll(); // Menghitung total kriteria
+        // Hitung total data
+        $totalKaryawan = $karyawanModel->countAll();
+        $totalKriteria = $kriteriaModel->countAll();
+        $totalPenilaian = $penilaianModel->countAll();
+        $totalSubKriteria = $subKriteriaModel->getTotalSubKriteria(); // ⬅️ Panggil fungsi ini dari model
 
-        // Instance model KriteriaModel
-        $PenilaianKaryawanM = new PenilaianKaryawanM();
-
-        // Hitung jumlah data kriteria
-        $totalPenilaian = $PenilaianKaryawanM->countAll(); // Menghitung total kriteria
-
-
-        // Menampilkan view dengan data total karyawan dan total kriteria
         return view('dashboard', [
-            'totalKaryawan' => $totalKaryawan,
-            'totalKriteria' => $totalKriteria,
-            'totalPenilaian' => $totalPenilaian,
-            'uri' => $uri
+            'totalKaryawan'     => $totalKaryawan,
+            'totalKriteria'     => $totalKriteria,
+            'totalPenilaian'    => $totalPenilaian,
+            'totalSubKriteria'  => $totalSubKriteria, // ⬅️ Kirim ke view
+            'uri'               => $uri
         ]);
     }
 

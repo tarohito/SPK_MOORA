@@ -41,7 +41,12 @@ class SubKriteriaM extends Model
     public function ambilNamaAndKodeDariKriteria()
     {
         return $this->select('sub_kriteria.*, kriteria.nama_kriteria, kriteria.kode_kriteria')
-        ->join('kriteria', 'kriteria.id = sub_kriteria.kriteria_id')
-        ->findAll();
+            ->join('kriteria', 'kriteria.id = sub_kriteria.kriteria_id')
+            ->findAll();
+    }
+
+    public function getTotalSubKriteria()
+    {
+        return $this->countAll(); // Mengembalikan jumlah seluruh baris pada tabel sub_kriteria
     }
 }

@@ -54,7 +54,7 @@
                 </div>
                 <div class="counter_no">
                     <div>
-                        <p class="total_no">54</p>
+                        <p class="total_no"><?= $totalSubKriteria ?></p>
                         <p class="head_couter">Sub Kriteria</p>
                     </div>
                 </div>
