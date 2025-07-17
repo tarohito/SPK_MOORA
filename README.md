@@ -3,9 +3,7 @@
 Sistem Pendukung Keputusan menggunakan metode MOORA (Multi‑Objective Optimization on the basis of Ratio Analysis)
 
 Aplikasi ini dibuat untuk memenuhi kebutuhan pembelajaran skripsi saya. Proyek ini bersifat open-source, dapat digunakan dan dimodifikasi secara bebas, dengan catatan tidak untuk diperjual-belikan.
-
----
-
+```
 ## 📌 Fitur Utama
 - Input data karyawan
 - Penentuan bobot kriteria
@@ -13,9 +11,7 @@ Aplikasi ini dibuat untuk memenuhi kebutuhan pembelajaran skripsi saya. Proyek i
 - Perhitungan otomatis dengan metode MOORA
 - Hasil rekomendasi terbaik
 - Edit username dan password
-
----
-
+--
 ## ⚙️ Teknologi yang Digunakan
 - Backend : CodeIgniter
 - Frontend : Bootstrap
