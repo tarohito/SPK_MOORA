@@ -1,4 +1,4 @@
-# 📊 SPK_MOORA
+# 📊 SISTEM PENDUKUNG KEPUTUSAN BERBASIS WEB DENGAN METODE MOORA
 
 Sistem Pendukung Keputusan menggunakan metode MOORA (Multi‑Objective Optimization on the basis of Ratio Analysis)
 
